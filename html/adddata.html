@@ -1,0 +1,1397 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="../css/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="antialiased bg-gray-50 dark:bg-gray-900">
+        <nav
+            class="bg-white border-b border-gray-200 px-4 py-2.5 dark:bg-gray-800 dark:border-gray-700 fixed left-0 right-0 top-0 z-50">
+            <div class="flex flex-wrap justify-between items-center">
+                <div class="flex justify-start items-center">
+                    <button data-drawer-target="drawer-navigation" data-drawer-toggle="drawer-navigation"
+                        aria-controls="drawer-navigation"
+                        class="p-2 mr-2 text-gray-600 rounded-lg cursor-pointer md:hidden hover:text-gray-900 hover:bg-gray-100 focus:bg-gray-100 dark:focus:bg-gray-700 focus:ring-2 focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
+                        <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <svg aria-hidden="true" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="sr-only">Toggle sidebar</span>
+                    </button>
+                    <a href="https://flowbite.com" class="flex items-center justify-between mr-4">
+                        <img src="../img/logo.png" class="mr-3 h-12" alt="Flowbite Logo" />
+                        <span class="self-center text-1xl font-semibold whitespace-nowrap dark:text-white">Digital RSBSA
+                            in Abra de Ilog Occidental Mindoro</span>
+                    </a>
+                </div>
+                <div class="flex items-center lg:order-2">
+                    <button type="button" data-drawer-toggle="drawer-navigation" aria-controls="drawer-navigation"
+                        class="p-2 mr-1 text-gray-500 rounded-lg md:hidden hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-700 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600">
+                        <span class="sr-only">Toggle search</span>
+                        <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path clip-rule="evenodd" fill-rule="evenodd"
+                                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z">
+                            </path>
+                        </svg>
+                    </button>
+                    <!-- Dropdown menu -->
+                    <button type="button"
+                        class="flex mx-3 text-sm bg-white-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-white-100"
+                        id="user-menu-button" aria-expanded="false" data-dropdown-toggle="dropdown">
+                        <span class="sr-only">Open user menu</span>
+                        <img class="w-8 h-8 rounded-full" src="../img/profile.png" alt="user photo" />
+                    </button>
+                    <!-- Dropdown menu -->
+                    <div class="hidden z-50 my-4 w-56 text-base list-none bg-white divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600 rounded-xl"
+                        id="dropdown">
+                        <div class="py-3 px-4">
+                            <span class="block text-sm font-semibold text-gray-900 dark:text-white">Admin</span>
+                            <span class="block text-sm text-gray-900 truncate dark:text-white">admin@gmail.com</span>
+                        </div>
+                        <ul class="py-1 text-gray-700 dark:text-gray-300" aria-labelledby="dropdown">
+                            <li>
+                                <a href="#"
+                                    class="block py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">My
+                                    profile</a>
+                            </li>
+                            <ul class="py-1 text-gray-700 dark:text-gray-300" aria-labelledby="dropdown">
+                                <li>
+                                    <a href="#"
+                                        class="block py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign
+                                        out</a>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Sidebar -->
+
+        <aside
+            class="fixed top-0 left-0 z-40 w-64 h-screen pt-14 transition-transform -translate-x-full bg-white border-r border-gray-200 md:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
+            aria-label="Sidenav" id="drawer-navigation">
+            <div class="overflow-y-auto py-5 px-3 h-full bg-white dark:bg-gray-800">
+                <form action="#" method="GET" class="md:hidden mb-2">
+                    <label for="sidebar-search" class="sr-only">Search</label>
+                    <div class="relative">
+                        <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                            <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z">
+                                </path>
+                            </svg>
+                        </div>
+                        <input type="text" name="search" id="sidebar-search"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full pl-10 p-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                            placeholder="Search" />
+                    </div>
+                </form>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="./index.html"
+                            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                            <svg aria-hidden="true"
+                                class="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                                fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
+                                <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
+                            </svg>
+                            <span class="ml-3">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" style="color:blue;"
+                            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+
+                            <svg class="w-6 h-6 text-blue-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M9 2.221V7H4.221a2 2 0 0 1 .365-.5L8.5 2.586A2 2 0 0 1 9 2.22ZM11 2v5a2 2 0 0 1-2 2H4v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-7Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span class="ml-3">Add Data</span>
+                        </a>
+                    </li>
+                    <li>
+                    <li>
+                        <a href="datalist.html"
+                            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                            <svg aria-hidden="true"
+                                class="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                                fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
+                                <path fill-rule="evenodd"
+                                    d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="ml-3">Data List</span>
+                        </a>
+                    </li>
+                </ul>
+                </li>
+                </ul>
+                <ul class="pt-5 mt-5 space-y-2 border-t border-gray-200 dark:border-gray-700">
+                    <li>
+                        <a href="report.html"
+                            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group">
+                            <svg aria-hidden="true"
+                                class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                                fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
+                                <path fill-rule="evenodd"
+                                    d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="ml-3">Reports </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group">
+                            <svg aria-hidden="true"
+                                class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                                fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z">
+                                </path>
+                            </svg>
+                            <span class="ml-3">Archived</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </aside>
+        <main class="md:ml-64  pt-20 p-2 ">
+            <div>
+                <h1 class="mb-5 text-xl font-bold leading-none tracking-tight text-gray-900 dark:text-white">
+                    RSBSA ENROLLMENT</h1>
+            </div>
+            <section class="bg-white p-2 sm:p-5 rounded-lg">
+                <div class="mx-auto max-w-screen-xl py-2">
+                    <!-- step1 -->
+                    <form id="step1" style="display: flex;">
+                        <div class="w-full flex flex-col gap-1">
+                            <div>
+                                <h1
+                                    class=" ml-2 text-lg font-bold leading-none tracking-tight text-gray-900 dark:text-white">
+                                    PERSONAL INFORMATION</h1>
+                            </div>
+                            <div class="flex flex-col gap-2 p-2 ml-2">
+
+                                <div class="w-500 gap-5 flex flex-row justify-between" style="width: 880px;">
+                                    <div class="w-full " style="width: 400px;">
+                                        <label for="date"
+                                            class=" mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                            Date</label>
+                                        <input type="date" id="email" style="width: 250px;"
+                                            class="relativeshadow-xs bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
+                                            placeholder="" required />
+                                    </div>
+                                    <div class="w-full " style="width: 436px;">
+                                        <label for="date"
+                                            class=" mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                            Reference no.</label>
+                                        <input type="number" id="email"
+                                            class="shadow-xs relative w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
+                                            placeholder="" required />
+                                    </div>
+                                </div>
+                                <div class="w-full mb-3 justify-between gap-5 items-center flex flex-row ">
+                                    <div class="w-full flex flex-col gap-1">
+                                        <div class=" flex flex-row gap-2">
+                                            <div class="w-full">
+                                                <label for="Surname"
+                                                    class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                                    Surname</label>
+                                                <input type="text" id="password"
+                                                    class="shadow-xs bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
+                                                    required />
+                                            </div>
+                                            <div class="w-full">
+                                                <label for="Surname"
+                                                    class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                                    First name</label>
+                                                <input type="text" id="password"
+                                                    class="shadow-xs  bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
+                                                    required />
+                                            </div>
+                                        </div>
+                                        <div class=" flex flex-row gap-2">
+                                            <div class="w-full">
+                                                <label for="Surname"
+                                                    class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                                    Middle name</label>
+                                                <input type="text" id="password"
+                                                    class="shadow-xs  bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
+                                                    required />
+                                            </div>
+                                            <div class="w-full">
+                                                <label for="Surname"
+                                                    class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                                    Extension Name</label>
+                                                <input type="text" id="password"
+                                                    class="shadow-xs  bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
+                                                    required />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="shadow-sm shadow-black-400 p-2 mt-0" style="width: 150px;">
+                                        <label for="Surname"
+                                            class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                            Sex</label>
+                                        <div class="flex flex-col justify-between gap-2 ">
+                                            <div class="flex items-center">
+                                                <input id="default-radio-1" type="radio" value="1" name="default-radio1"
+                                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                <label for="default-radio-1"
+                                                    class="ms-2 text-sm font-normal text-gray-900 dark:text-gray-300">Male</label>
+                                            </div>
+                                            <div class="flex items-center">
+                                                <input checked id="default-radio-2" type="radio" value="1"
+                                                    name="default-radio1"
+                                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                <label for="default-radio-2"
+                                                    class="ms-2 text-sm font-normal text-gray-900 dark:text-gray-300">Female</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <h1
+                                            class="mb-2 text-sm font-medium leading-none tracking-tight text-gray-900 dark:text-white">
+                                            Address</h1>
+                                    </div>
+                                    <div class="flex flex-col gap-2">
+                                        <div class=" flex flex-row gap-2">
+                                            <div class="w-full">
+                                                <label for="Surname"
+                                                    class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                                    HOUSE/LOT/BLDG NO./PUROK</label>
+                                                <input type="text" id="password"
+                                                    class="shadow-xs  bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
+                                                    required />
+                                            </div>
+                                            <div class="w-full">
+                                                <label for="Surname"
+                                                    class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                                    STREET/SITIO/SUBDIV.</label>
+                                                <input type="text" id="password"
+                                                    class="shadow-xs  bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
+                                                    required />
+                                            </div>
+                                        </div>
+                                        <div class=" flex flex-row gap-2">
+                                            <div class="w-full">
+                                                <label for="countries"
+                                                    class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">BARANGAY</label>
+                                                <select id="countries"
+                                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                                    <option selected></option>
+                                                    <option value="US">CAMURONG</option>
+                                                    <option value="CA">LUMANG BAYAN</option>
+                                                    <option value="FR">TIBAG</option>
+                                                    <option value="FR">WAWA</option>
+                                                    <option value="FR">ALUYAN</option>
+                                                    <option value="DE">POBLACION</option>
+                                                    <option value="DE">BALAO</option>
+                                                    <option value="DE">SAN VICENTE</option>
+                                                    <option value="DE">CABACAO</option>
+                                                    <option value="DE">ARMADO</option>
+                                                </select>
+                                            </div>
+                                            <div class="w-full">
+                                                <label for="Surname"
+                                                    class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                                    MUNICIPALIT/CITY</label>
+                                                <input type="text" id="password"
+                                                    class="shadow-xs  bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
+                                                    required />
+                                            </div>
+                                        </div>
+                                        <div class=" flex flex-row gap-2">
+                                            <div class="w-full">
+                                                <label for="Surname"
+                                                    class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                                    PROVINCE</label>
+                                                <input type="text" id="password"
+                                                    class="shadow-xs  bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
+                                                    required />
+                                            </div>
+                                            <div class="w-full">
+                                                <label for="Surname"
+                                                    class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                                    REGION</label>
+                                                <input type="text" id="password"
+                                                    class="shadow-xs  bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
+                                                    required />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="w-full  flex flex-row gap-6 items-center justify-center mt-2">
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full  h-3 w-3 bg-blue-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 1</p>
+                                </div>
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 2</p>
+                                </div>
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 3</p>
+                                </div>
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 4</p>
+                                </div>
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 5</p>
+                                </div>
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 6</p>
+                                </div>
+                            </div>
+                            <div class=" flex justify-end">
+                                <button type="button" onclick="step2()"
+                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-normal rounded-sm text-sm px-4 cursor-pointer py-1 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Next</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- step2 -->
+                    <form id="step2" style="display: none;">
+                        <div class="w-full flex flex-col gap-1">
+                            <div>
+                                <h1
+                                    class=" ml-2 text-lg font-bold leading-none tracking-tight text-gray-900 dark:text-white">
+                                    PERSONAL INFORMATION</h1>
+                            </div>
+                            <div class="w-full flex flex-col gap-2 p-2 ml-2" style="margin-bottom: 90px;">
+                                <div class="w-full gap-5 flex flex-row justify-between">
+                                    <div class="w-full">
+                                        <label for="date"
+                                            class=" mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                            Mobile Number</label>
+                                        <input type="number" id="email"
+                                            class="relativeshadow-xs w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
+                                            placeholder="Input number" required />
+                                    </div>
+                                    <div class="w-full">
+                                        <label for="date"
+                                            class=" mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                            Landline Number</label>
+                                        <input type="number" id="email"
+                                            class="shadow-xs relative w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
+                                            placeholder="Input number" required />
+                                    </div>
+                                </div>
+                                <div class="w-full gap-5 flex flex-row justify-between">
+                                    <div class="w-full">
+                                        <label for="date"
+                                            class=" mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                            Date of Birth</label>
+                                        <input type="date" id="email" style="width: 300px;"
+                                            class="relativeshadow-xs w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
+                                            placeholder="Input number" required />
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <h1
+                                            class="mb-2 text-sm font-medium leading-none tracking-tight text-gray-900 dark:text-white">
+                                            Place of Birth</h1>
+                                    </div>
+                                    <div class="flex flex-col gap-2">
+                                        <div class=" flex flex-row gap-2">
+                                            <div class="w-full">
+                                                <label for="Surname"
+                                                    class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                                    Country</label>
+                                                <input type="text" id="password"
+                                                    class="shadow-xs  bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
+                                                    required />
+                                            </div>
+                                            <div class="w-full">
+                                                <label for="Surname"
+                                                    class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                                    PROVINCE</label>
+                                                <input type="text" id="password"
+                                                    class="shadow-xs  bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
+                                                    required />
+                                            </div>
+                                        </div>
+                                        <div class="w-full flex flex-row gap-2">
+                                            <div class="w-full">
+                                                <label for="Surname"
+                                                    class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                                    Municipality</label>
+                                                <input type="text" id="password"
+                                                    class="shadow-xs  bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
+                                                    required />
+                                            </div>
+                                            <div class="w-full">
+                                                <label for="Surname"
+                                                    class="block mb-2 hidden text-sm font-normal text-gray-900 dark:text-white">
+                                                    Municipality</label>
+                                                <input type="text" id="password"
+                                                    class="shadow-xs hidden  bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
+                                                    required />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full flex flex-row gap-6 items-center justify-center">
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full  h-3 w-3 bg-gray-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 1</p>
+                                </div>
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full h-3 w-3 bg-blue-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 2</p>
+                                </div>
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 3</p>
+                                </div>
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 4</p>
+                                </div>
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 5</p>
+                                </div>
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 6</p>
+                                </div>
+                            </div>
+                            <div class=" flex justify-between">
+                                <button type="button" onclick="step1()"
+                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-normal rounded-sm text-sm px-4 cursor-pointer py-1 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Back</button>
+                                <button type="button" onclick="step3()"
+                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-normal rounded-sm text-sm px-4 cursor-pointer py-1 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Next</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- step3 -->
+                    <form id="step3" style="display: none;">
+                        <div class="w-full flex flex-col gap-1">
+                            <div>
+                                <h1
+                                    class=" ml-2 text-lg font-bold leading-none tracking-tight text-gray-900 dark:text-white">
+                                    PERSONAL INFORMATION</h1>
+                            </div>
+                            <div class="w-full flex flex-col gap-2 p-2 ml-2" style="margin-bottom: 115px;">
+                                <div class="w-full  justify-between gap-5 flex flex-row " style="width: 500px;">
+                                    <div class="w-full">
+                                        <label for="date"
+                                            class=" mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                            Mother's Maiden Name</5bel>
+                                            <input type="text" id="email"
+                                                class="relativeshadow-xs w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
+                                                placeholder="" required />
+                                    </div>
+                                    <div class="w-full" style="width: 200px;">
+                                        <label for="Surname"
+                                            class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                            Husehold Head?</label>
+                                        <div class="flex flex-row justify-between gap-2 ">
+                                            <div class="flex items-center">
+                                                <input id="default-radio-1" type="radio" value="2" name="default-radio2"
+                                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                <label for="default-radio-1"
+                                                    class="ms-2 text-sm font-normal text-gray-900 dark:text-gray-300">Yes</label>
+                                            </div>
+                                            <div class="flex items-center">
+                                                <input id="default-radio-2" type="radio" value="2" name="default-radio2"
+                                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                <label for="default-radio-2"
+                                                    class="ms-2 text-sm font-normal text-gray-900 dark:text-gray-300">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full  justify-between gap-5 flex flex-row " style="width: 500px;">
+                                    <div class="w-full">
+                                        <label for="date"
+                                            class=" mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                            If no, name of household head:</5bel>
+                                            <input type="text" id="email"
+                                                class="relativeshadow-xs w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
+                                                placeholder="" required />
+                                    </div>
+                                    <div class="w-full" style="width: 200px;">
+                                        <label for="Surname"
+                                            class="block mb-2 hidden text-sm font-normal text-gray-900 dark:text-white">
+                                            HOusehold Head?</label>
+                                        <div class="flex flex-row justify-between gap-2 ">
+                                            <div class="flex items-center">
+                                                <input id="default-radio-3" type="radio" name="default-radio"
+                                                    class="w-4 h-4 hidden text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                <label for="default-radio-3"
+                                                    class="ms-2 text-sm hidden font-normal text-gray-900 dark:text-gray-300">Yes</label>
+                                            </div>
+                                            <div class="flex items-center">
+                                                <input checked id="default-radio-4" type="radio" name="default-radio"
+                                                    class="w-4 h-4 hidden text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                <label for="default-radio-4"
+                                                    class="ms-2 text-sm hidden font-normal text-gray-900 dark:text-gray-300">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex flex-col gap-2">
+                                        <div class=" flex flex-row gap-2">
+                                            <div class="w-full">
+                                                <label for="countries"
+                                                    class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">Relationship</label>
+                                                <select id="countries"
+                                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                                    <option selected></option>
+                                                    <option value="MOTHER">MOTHER</option>
+                                                    <option value="FATHER">FATHER</option>
+                                                    <option value="BROTHER">BROTHER</option>
+                                                    <option value="SISTER">SISTER</option>
+                                                    <option value="AUNTIE">AUNTIE</option>
+                                                    <option value="UNCLE">UNCLE</option>
+                                                    <option value="GRAND MOTHER">GRANDMOTHER</option>
+                                                    <option value="GRAND FATHER">GRANDFATHER</option>
+                                                </select>
+                                            </div>
+                                            <div class="w-full">
+                                                <label for="Surname"
+                                                    class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                                    No. of Male</label>
+                                                <input type="number" id="password"
+                                                    class="shadow-xs bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
+                                                    required />
+                                            </div>
+                                        </div>
+                                        <div class="w-full flex flex-row gap-2">
+                                            <div class="w-full">
+                                                <label for="Surname"
+                                                    class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                                    No. of Living Household</label>
+                                                <input type="text" id="password"
+                                                    class="shadow-xs  bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
+                                                    required />
+                                            </div>
+                                            <div class="w-full">
+                                                <label for="Surname"
+                                                    class="block mb-2 hidden text-sm font-normal text-gray-900 dark:text-white">
+                                                    No. of Female</label>
+                                                <input type="text" id="password"
+                                                    class="shadow-xs hidden  bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
+                                                    required />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full  flex flex-row gap-6 items-center justify-center">
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full  h-3 w-3 bg-gray-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 1</p>
+                                </div>
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 2</p>
+                                </div>
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full h-3 w-3 bg-blue-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 3</p>
+                                </div>
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 4</p>
+                                </div>
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 5</p>
+                                </div>
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 6</p>
+                                </div>
+                            </div>
+                            <div class=" flex justify-between">
+                                <button type="button" onclick="step2()"
+                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-normal rounded-sm text-sm px-4 cursor-pointer py-1 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Back</button>
+                                <button type="button" onclick="step4()"
+                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-normal rounded-sm text-sm px-4 cursor-pointer py-1 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Next</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- step4 -->
+                    <form id="step4" style="display: none;">
+                        <div class="w-full flex flex-col gap-1">
+                            <div>
+                                <h1
+                                    class=" ml-2 text-lg font-bold leading-none tracking-tight text-gray-900 dark:text-white">
+                                    PERSONAL INFORMATION</h1>
+                            </div>
+                            <div class="w-full flex flex-row gap-2">
+                                <div class=" flex flex-col gap-2 p-2 ml-2" style="margin-bottom: 50px; width: 800px;">
+                                    <div class="justify-between gap-5 flex flex-row w-full">
+                                        <div class="w-full " style="width: 525px;">
+                                            <label for="date"
+                                                class=" mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                                Highest Formal Education</5bel>
+                                                <select id="countries"
+                                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                                    <option selected></option>
+                                                    <option value="PRE-SCHOOL">PRE-SCHOOL</option>
+                                                    <option value="ELEMENTARY">ELEMENTARY</option>
+                                                    <option value="HIGH SCHOOL (NON-K-12)">HIGH SCHOOL (NON-K-12)
+                                                    </option>
+                                                    <option value="JUNIOR SCHOOL (K-12)">JUNIOR SCHOOL (K-12)</option>
+                                                    <option value="COLLEGE">COLLEGE</option>
+                                                    <option value="VOCATIONAL">VOCATIONAL</option>
+                                                    <option value="POST-GRADUATE">POST-GRADUATE</option>
+                                                    <option value="NONE">NONE</option>
+                                                </select>
+                                        </div>
+                                        <div class="w-full flex flex-col" style="width: 400px;">
+                                            <label for="Surname"
+                                                class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                                Person With Disabilities (PWD)?</label>
+                                            <div class="flex flex-row justify-between items-center gap-2 "
+                                                style="width: 150px;">
+                                                <div class="flex items-center">
+                                                    <input id="default-radio-5" type="radio" value="3"
+                                                        name="default-radio3"
+                                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                    <label for="default-radio-5"
+                                                        class="ms-2 text-sm font-normal text-gray-900 dark:text-gray-300">Yes</label>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <input id="default-radio-6" type="radio" value="3"
+                                                        name="default-radio3"
+                                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                    <label for="default-radio-6"
+                                                        class="ms-2 text-sm font-normal text-gray-900 dark:text-gray-300">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="justify-between gap-5 flex flex-row w-full">
+                                        <div class="w-full  " style="width: 525px;">
+                                            <label for="Surname"
+                                                class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                                4P's Beneficiary?</label>
+                                            <div class="flex flex-row justify-between px-5 items-center  gap-2 "
+                                                style="width: 250px;">
+                                                <div class="flex items-center">
+                                                    <input id="default-radio-7" type="radio" value="4"
+                                                        name="default-radio4"
+                                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                    <label for="default-radio-7"
+                                                        class="ms-2 text-sm font-normal text-gray-900 dark:text-gray-300">Yes</label>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <input id="default-radio-8" type="radio" value="4"
+                                                        name="default-radio4"
+                                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                    <label for="default-radio-8"
+                                                        class="ms-2 text-sm font-normal text-gray-900 dark:text-gray-300">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-full flex flex-col" style="width: 400px;">
+                                            <label for="Surname"
+                                                class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                                With Government ID:</label>
+                                            <div class="flex flex-row justify-between items-center gap-2 "
+                                                style="width: 150px;">
+                                                <div class="flex items-center">
+                                                    <input id="default-radio-5" type="radio" value="3"
+                                                        name="default-radio5"
+                                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                    <label for="default-radio-5"
+                                                        class="ms-2 text-sm font-normal text-gray-900 dark:text-gray-300">Yes</label>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <input id="default-radio-6" type="radio" value="3"
+                                                        name="default-radio5"
+                                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                    <label for="default-radio-6"
+                                                        class="ms-2 text-sm font-normal text-gray-900 dark:text-gray-300">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="justify-between gap-5 flex flex-row w-full">
+                                        <div class="w-full  " style="width: 525px;">
+                                            <label for="Surname"
+                                                class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                                Member of Indigenous Group?</label>
+                                            <div class="flex flex-row justify-between px-5 items-center  gap-2 "
+                                                style="width: 250px;">
+                                                <div class="flex items-center">
+                                                    <input id="default-radio-11" type="radio" value="6"
+                                                        name="default-radio6"
+                                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                    <label for="default-radio-11"
+                                                        class="ms-2 text-sm font-normal text-gray-900 dark:text-gray-300">Yes</label>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <input id="default-radio-12" type="radio" value="6"
+                                                        name="default-radio6"
+                                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                    <label for="default-radio-12"
+                                                        class="ms-2 text-sm font-normal text-gray-900 dark:text-gray-300">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-full flex flex-col" style="width: 400px;">
+                                            <label for="Surname"
+                                                class="block mb-2  text-sm font-normal text-gray-900 dark:text-white">
+                                                If Yes, Specify ID Type:</label>
+                                            <input type="number" id=""
+                                                style="border-top: 0; border-left: 0; border-right: 0;"
+                                                class="bg-white border border-gray-300 text-gray-900 text-sm block w-full p-1.5"
+                                                placeholder="" required />
+                                        </div>
+                                    </div>
+                                    <div class="justify-between gap-5 flex flex-row w-full">
+                                        <div class="w-full  " style="width: 525px;">
+                                            <label for="Surname"
+                                                class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                                Member of an Farmers Assoiciation/Cooperative</label>
+                                            <div class="flex flex-row justify-between px-5 items-center  gap-2 "
+                                                style="width: 250px;">
+                                                <div class="flex items-center">
+                                                    <input id="default-radio-13" type="radio" value="7"
+                                                        name="default-radio7"
+                                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                    <label for="default-radio-13"
+                                                        class="ms-2 text-sm font-normal text-gray-900 dark:text-gray-300">Yes</label>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <input id="default-radio-13" type="radio" value="7"
+                                                        name="default-radio7"
+                                                        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                    <label for="default-radio-13"
+                                                        class="ms-2 text-sm font-normal text-gray-900 dark:text-gray-300">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-full flex flex-col" style="width: 400px;">
+                                            <label for="Surname"
+                                                class="block mb-2  text-sm font-normal text-gray-900 dark:text-white">
+                                                ID Number:</label>
+                                            <input type="number" id=""
+                                                style="border-top: 0; border-left: 0; border-right: 0;"
+                                                class="bg-white border border-gray-300 text-gray-900 text-sm block w-full p-1.5"
+                                                placeholder="" required />
+                                        </div>
+                                    </div>
+                                    <div class="justify-between gap-5 flex flex-row w-full">
+                                        <div class="w-full  " style="width: 525px;">
+                                            <label for="Surname"
+                                                class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                                If Yes, Specify</label>
+                                            <div class="flex flex-row justify-between px-5 items-center  gap-2 "
+                                                style="width: 250px;">
+                                                <input type="number" id=""
+                                                    style="border-top: 0; border-left: 0; border-right: 0;"
+                                                    class="bg-white border border-gray-300 text-gray-900 text-sm block w-full p-1.5"
+                                                    placeholder="" required />
+                                            </div>
+                                        </div>
+                                        <div class="w-full flex flex-col " style="width: 400px;">
+                                            <label for="Surname"
+                                                class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                                Contact Number:</label>
+                                            <input type="number" id=""
+                                                class="bg-white border border-gray-300 text-gray-900 text-sm block w-full p-1.5"
+                                                placeholder="" required />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" flex flex-col gap-2 p-2 ml-2" style="margin-bottom: 50px; width: 300px;">
+                                    <label for="Surname"
+                                        class="block mb-2 text-lg font-medium text-gray-900 dark:text-white">
+                                        Gross Annual Income</label>
+                                    <div class="justify-between gap-5 flex flex-row w-full">
+                                        <div class="w-full flex flex-col" style="width: 200px;">
+                                            <label for="Surname"
+                                                class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                                Farming</label>
+                                            <input type="number" id=""
+                                                class="bg-white border border-gray-300 text-gray-900 text-sm block w-full p-1.5"
+                                                placeholder="" required />
+                                        </div>
+                                    </div>
+                                    <div class="justify-between gap-5 flex flex-row w-full">
+                                        <div class="w-full flex flex-col" style="width: 200px;">
+                                            <label for="Surname"
+                                                class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                                Non-Farming</label>
+                                            <input type="number" id=""
+                                                class="bg-white border border-gray-300 text-gray-900 text-sm block w-full p-1.5"
+                                                placeholder="" required />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w-full  flex flex-row gap-6 items-center justify-center mt-2">
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full  h-3 w-3 bg-gray-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 1</p>
+                                </div>
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 2</p>
+                                </div>
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 3</p>
+                                </div>
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full h-3 w-3 bg-blue-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 4</p>
+                                </div>
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 5</p>
+                                </div>
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 6</p>
+                                </div>
+                            </div>
+                            <div class=" flex justify-between">
+                                <button type="button" onclick="step3()"
+                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-normal rounded-sm text-sm px-4 cursor-pointer py-1 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Back</button>
+                                <button type="button" onclick="step5()"
+                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-normal rounded-sm text-sm px-4 cursor-pointer py-1 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Next</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- step5 -->
+                    <form id="step5" style="display: none;">
+                        <div class="w-full flex flex-col gap-1">
+                            <div>
+                                <h1
+                                    class=" ml-2 text-lg font-bold leading-none tracking-tight text-gray-900 dark:text-white">
+                                    FARMER PROFILE</h1>
+                            </div>
+                            <div class="w-full flex flex-col gap-2 p-2 ml-2" style="margin-bottom: 90px;">
+                                <div class="w-full gap-5 flex flex-row justify-between">
+                                    <div class="w-full" style="margin-top: 22px;">
+                                        <label for="countries"
+                                            class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">Main
+                                            Livelihood</label>
+                                        <select id="countries"
+                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                            <option selected></option>
+                                            <option value="MOTHER">FARMER</option>
+                                            <option value="FATHER">FARMER/LABORER</option>
+                                            <option value="BROTHER">FISHERFOLK</option>
+                                            <option value="SISTER">AGRI-YOUTH</option>
+                                        </select>
+                                    </div>
+                                    <div class="w-full">
+                                        <div>
+                                            <h1
+                                                class="mb-2 text-sm font-medium leading-none tracking-tight text-gray-900 dark:text-white">
+                                                <em class="font-italic font-bold">For farmers:</em>
+                                            </h1>
+                                        </div>
+                                        <label for="countries"
+                                            class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                            Type of Farming Activity
+                                        </label>
+                                        <select id="countries"
+                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                            <option selected></option>
+                                            <option value="MOTHER">RICE</option>
+                                            <option value="FATHER">CORN</option>
+                                            <option value="BROTHER">VEGETABLE</option>
+                                            <option value="SISTER">POULTRY</option>
+                                            <option value="AUNTIE">LIVESTOCK</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="w-full gap-5 flex flex-row justify-between">
+                                    <div class="w-full">
+                                        <div>
+                                            <h1
+                                                class="mb-2 text-sm font-medium leading-none tracking-tight text-gray-900 dark:text-white">
+                                                <em class="font-italic font-bold">For farmerworkers:</em>
+                                            </h1>
+                                        </div>
+                                        <label for="countries"
+                                            class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                            Kind of Work
+                                        </label>
+                                        <select id="countries"
+                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                            <option selected></option>
+                                            <option value="MOTHER">LAND PREPARATION</option>
+                                            <option value="FATHER">PLANTING/TRANSPLANTING</option>
+                                            <option value="BROTHER">CULTIVATION</option>
+                                            <option value="SISTER">HARVESTING</option>
+                                        </select>
+                                    </div>
+                                    <div class="w-full">
+                                        <div>
+                                            <h1
+                                                class="mb-2 text-sm font-medium leading-none tracking-tight text-gray-900 dark:text-white">
+                                                <em class="font-italic font-bold">For fisherfolk:</em>
+                                            </h1>
+                                        </div>
+                                        <label for="countries"
+                                            class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                            Type of Fishinh Activity
+                                        </label>
+                                        <select id="countries"
+                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                            <option selected></option>
+                                            <option value="MOTHER">FISH CAPTURE</option>
+                                            <option value="FATHER">AQUACULTURE</option>
+                                            <option value="BROTHER">GLEANING</option>
+                                            <option value="SISTER">FISH PROCESSING</option>
+                                            <option value="AUNTIE">FISH VENDING</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="w-full gap-5 flex flex-row justify-between">
+                                    <div class="w-full">
+                                        <div>
+                                            <h1
+                                                class="mb-2 text-sm font-medium leading-none tracking-tight text-gray-900 dark:text-white">
+                                                <em class="font-italic font-bold">For agri-youth:</em>
+                                            </h1>
+                                        </div>
+                                        <label for="countries"
+                                            class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                            Type of Involvement
+                                        </label>
+                                        <select id="countries"
+                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                            <option selected></option>
+                                            <option value="MOTHER">PART OF FARMING HOUSEHOLD</option>
+                                            <option value="FATHER">ATTENDING/ATTENDED FORMAL AGRI-FISHERY RELATED COURSE
+                                            </option>
+                                            <option value="BROTHER">PARTICIPATED IN ANY AGRICULTURAL ACTIVITY/PROGRAM
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="w-full">
+                                        <div>
+                                            <label for="countries"
+                                                class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                                Number of Farm Parcel
+                                            </label>
+                                        </div>
+                                        <span class="absolute start-0 bottom-3 text-gray-500 dark:text-gray-400">
+                                            <svg class="w-4 h-4 rtl:rotate-[270deg]" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                viewBox="0 0 19 18">
+                                                <path
+                                                    d="M18 13.446a3.02 3.02 0 0 0-.946-1.985l-1.4-1.4a3.054 3.054 0 0 0-4.218 0l-.7.7a.983.983 0 0 1-1.39 0l-2.1-2.1a.983.983 0 0 1 0-1.389l.7-.7a2.98 2.98 0 0 0 0-4.217l-1.4-1.4a2.824 2.824 0 0 0-4.218 0c-3.619 3.619-3 8.229 1.752 12.979C6.785 16.639 9.45 18 11.912 18a7.175 7.175 0 0 0 5.139-2.325A2.9 2.9 0 0 0 18 13.446Z" />
+                                            </svg>
+                                        </span>
+                                        <input type="text" id="floating-phone-number"
+                                            class="block py-2.5 ps-6 pe-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Input Number" />
+                                        <label for="floating-phone-number"
+                                            class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:start-6 peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Phone
+                                            number</label>
+                                    </div>
+                                </div>
+                                <div class="w-full gap-5 flex flex-row justify-between">
+                                    <div class="w-full">
+                                        <div>
+                                            <label for="countries"
+                                                class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                                Total Farm Area (in Hectare)
+                                            </label>
+                                        </div>
+                                        <span class="absolute start-0 bottom-3 text-gray-500 dark:text-gray-400">
+                                            <svg class="w-4 h-4 rtl:rotate-[270deg]" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                viewBox="0 0 19 18">
+                                                <path
+                                                    d="M18 13.446a3.02 3.02 0 0 0-.946-1.985l-1.4-1.4a3.054 3.054 0 0 0-4.218 0l-.7.7a.983.983 0 0 1-1.39 0l-2.1-2.1a.983.983 0 0 1 0-1.389l.7-.7a2.98 2.98 0 0 0 0-4.217l-1.4-1.4a2.824 2.824 0 0 0-4.218 0c-3.619 3.619-3 8.229 1.752 12.979C6.785 16.639 9.45 18 11.912 18a7.175 7.175 0 0 0 5.139-2.325A2.9 2.9 0 0 0 18 13.446Z" />
+                                            </svg>
+                                        </span>
+                                        <input type="text" id="floating-phone-number"
+                                            class="block py-2.5 ps-6 pe-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Input Number" />
+                                        <label for="floating-phone-number"
+                                            class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:start-6 peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Phone
+                                            number</label>
+                                    </div>
+                                    <div class="w-full">
+                                        <div>
+                                            <label for="countries"
+                                                class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                                Ownership Number
+                                            </label>
+                                        </div>
+                                        <span class="absolute start-0 bottom-3 text-gray-500 dark:text-gray-400">
+                                            <svg class="w-4 h-4 rtl:rotate-[270deg]" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                viewBox="0 0 19 18">
+                                                <path
+                                                    d="M18 13.446a3.02 3.02 0 0 0-.946-1.985l-1.4-1.4a3.054 3.054 0 0 0-4.218 0l-.7.7a.983.983 0 0 1-1.39 0l-2.1-2.1a.983.983 0 0 1 0-1.389l.7-.7a2.98 2.98 0 0 0 0-4.217l-1.4-1.4a2.824 2.824 0 0 0-4.218 0c-3.619 3.619-3 8.229 1.752 12.979C6.785 16.639 9.45 18 11.912 18a7.175 7.175 0 0 0 5.139-2.325A2.9 2.9 0 0 0 18 13.446Z" />
+                                            </svg>
+                                        </span>
+                                        <input type="text" id="floating-phone-number"
+                                            class="block py-2.5 ps-6 pe-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Input Number" />
+                                        <label for="floating-phone-number"
+                                            class="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:start-6 peer-focus:start-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Phone
+                                            number</label>
+                                    </div>
+                                </div>
+                                <div class="w-full gap-5 flex flex-row justify-between">
+                                    <div class="w-full  " style="width: 525px;">
+                                        <label for="Surname"
+                                            class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                            With Ancestral Domain?</label>
+                                        <div class="flex flex-row justify-between px-5 items-center  gap-2 "
+                                            style="width: 250px;">
+                                            <div class="flex items-center">
+                                                <input id="default-radio-7" type="radio" value="4" name="default-radio4"
+                                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                <label for="default-radio-7"
+                                                    class="ms-2 text-sm font-normal text-gray-900 dark:text-gray-300">Yes</label>
+                                            </div>
+                                            <div class="flex items-center">
+                                                <input id="default-radio-8" type="radio" value="4" name="default-radio4"
+                                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                <label for="default-radio-8"
+                                                    class="ms-2 text-sm font-normal text-gray-900 dark:text-gray-300">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-full  " style="width: 525px;">
+                                        <label for="Surname"
+                                            class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                            Agrarian Reform Beneficiary?</label>
+                                        <div class="flex flex-row justify-between px-5 items-center  gap-2 "
+                                            style="width: 250px;">
+                                            <div class="flex items-center">
+                                                <input id="default-radio-7" type="radio" value="4" name="default-radio4"
+                                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                <label for="default-radio-7"
+                                                    class="ms-2 text-sm font-normal text-gray-900 dark:text-gray-300">Yes</label>
+                                            </div>
+                                            <div class="flex items-center">
+                                                <input id="default-radio-8" type="radio" value="4" name="default-radio4"
+                                                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                <label for="default-radio-8"
+                                                    class="ms-2 text-sm font-normal text-gray-900 dark:text-gray-300">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full flex flex-row gap-6 items-center justify-center">
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full  h-3 w-3 bg-gray-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 1</p>
+                                </div>
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 2</p>
+                                </div>
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 3</p>
+                                </div>
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 4</p>
+                                </div>
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full h-3 w-3 bg-blue-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 5</p>
+                                </div>
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 6</p>
+                                </div>
+                            </div>
+                            <div class=" flex justify-between">
+                                <button type="button" onclick="step4()"
+                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-normal rounded-sm text-sm px-4 cursor-pointer py-1 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Back</button>
+                                <button type="button" onclick="step6()"
+                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-normal rounded-sm text-sm px-4 cursor-pointer py-1 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Next</button>
+                            </div>
+                        </div>
+                    </form>
+                    <form id="step6" style="display: none;">
+                        <div class="w-full flex flex-col gap-1">
+                            <div class="flex justify-center m-5">
+                            </div>
+                            <!-- Main modal -->
+                            <div id="successModal" tabindex="-1" aria-hidden="true"
+                                class="hidden fixed inset-0 z-50 items-center justify-center w-full h-modal md:h-full">
+                                <div class="relative p-4 w-full max-w-md">
+                                    <!-- Modal content -->
+                                    <div
+                                        class="relative p-4 text-center bg-white rounded-lg shadow dark:bg-gray-800 sm:p-5">
+                                        <button type="button"
+                                            class="text-gray-400 absolute top-2.5 right-2.5 bg-transparent hover:bg-gray-200 hover:text-gray-900 
+                       rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                                            data-modal-toggle="successModal">
+                                            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor"
+                                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 
+                        4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 
+                        4.293a1 1 0 01-1.414-1.414L8.586 10 
+                        4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                            </svg>
+                                            <span class="sr-only">Close modal</span>
+                                        </button>
+                                        <div
+                                            class="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900 p-2 flex items-center justify-center mx-auto mb-3.5">
+                                            <svg aria-hidden="true" class="w-8 h-8 text-green-500 dark:text-green-400"
+                                                fill="currentColor" viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 
+                        01-1.414 0l-4-4a1 1 0 011.414-1.414L8 
+                        12.586l7.293-7.293a1 1 0 011.414 
+                        0z" clip-rule="evenodd"></path>
+                                            </svg>
+                                            <span class="sr-only">Success</span>
+                                        </div>
+                                        <p class="mb-4 text-lg font-semibold text-gray-900 dark:text-white">
+                                            Change Password Successfully
+                                        </p>
+                                        <button data-modal-toggle="successModal" type="button" onclick="goToSection()"
+                                            class="py-2 px-3 text-sm font-medium text-center text-white rounded-lg 
+                       bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none 
+                       focus:ring-blue-300 dark:focus:ring-blue-900">
+                                            OK
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h1
+                                    class=" ml-2 text-lg font-bold leading-none tracking-tight text-gray-900 dark:text-white">
+                                    FARMER PROFILE</h1>
+                            </div>
+                            <div class="w-full flex flex-col gap-2 p-2 ml-2" style="margin-bottom: 25px;">
+                                <div class="w-full gap-5 flex flex-row justify-between">
+                                    <div class="w-full" style="margin-top: 0px;">
+                                        <h1
+                                            class="mb-2 text-sm font-medium leading-none tracking-tight text-gray-900 dark:text-white">
+                                            Farmer Location:
+                                        </h1>
+                                        <label for="countries"
+                                            class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">Barangay</label>
+                                        <select id="countries"
+                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                            <option selected></option>
+                                            <option value="MOTHER">ARMADO</option>
+                                            <option value="FATHER">BALAO</option>
+                                            <option value="BROTHER">CAMURONG</option>
+                                            <option value="SISTER">CABACAO</option>
+                                            <option value="SISTER">LUMANGBAYAN</option>
+                                            <option value="SISTER">POBLACION</option>
+                                            <option value="SISTER">SAN VICENTE</option>
+                                            <option value="SISTER">STA. MARIA</option>
+                                            <option value="SISTER">UDALO</option>
+                                            <option value="SISTER">WAWA</option>
+                                        </select>
+                                    </div>
+                                    <div class="w-full" style="margin-top: 22px;">
+                                        <label for="countries"
+                                            class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                            Municipality/City
+                                        </label>
+                                        <select id="countries"
+                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                            <option selected></option>
+                                            <option value="MOTHER">ABRA DE ILOG</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="w-full gap-5 flex flex-row justify-between" style="width: 507px;">
+                                    <div class="w-full">
+                                        <label for="countries"
+                                            class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                            Ownership Type:
+                                        </label>
+                                        <select id="countries"
+                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                            <option selected></option>
+                                            <option value="MOTHER">REGISTERED OWNER</option>
+                                            <option value="FATHER">TENANT</option>
+                                            <option value="BROTHER">LESSEE</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="flex item-center justify-center mt-5">
+                                    <div class="flex items-center justify-center" style="width: 250px; ">
+                                        <label for="dropzone-file"
+                                            class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+                                            <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                                                <svg class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400"
+                                                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 20 16">
+                                                    <path stroke="currentColor" stroke-linecap="round"
+                                                        stroke-linejoin="round" stroke-width="2"
+                                                        d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" />
+                                                </svg>
+                                                <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span
+                                                        class="font-semibold">Click to upload</span> or drag and drop
+                                                </p>
+                                                <p class="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF
+                                                    (MAX. 800x400px)</p>
+                                            </div>
+                                            <input id="dropzone-file" type="file" class="hidden" />
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full flex flex-row gap-6 items-center justify-center">
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full  h-3 w-3 bg-gray-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 1</p>
+                                </div>
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 2</p>
+                                </div>
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 3</p>
+                                </div>
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 4</p>
+                                </div>
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 5</p>
+                                </div>
+                                <div class="flex flex-col items-center ">
+                                    <div class="rounded-full h-3 w-3 bg-blue-500"></div>
+                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 6</p>
+                                </div>
+                            </div>
+                            <div class=" flex justify-between">
+                                <button type="button" onclick="step5()"
+                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-normal rounded-sm text-sm px-4 cursor-pointer py-1 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Back</button>
+                                <button type="button" data-modal-target="successModal" data-modal-toggle="successModal"
+                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-normal rounded-sm text-sm px-4 cursor-pointer py-1 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="../js/tailwind.config.js"></script>
+    <script>
+        function step1() {
+            document.getElementById("step1").style.display = "flex";
+            document.getElementById("step2").style.display = "none";
+            document.getElementById("step3").style.display = "none";
+            document.getElementById("step4").style.display = "none";
+            document.getElementById("step5").style.display = "none";
+            document.getElementById("step6").style.display = "none";
+        }
+        function step2() {
+            document.getElementById("step1").style.display = "none";
+            document.getElementById("step2").style.display = "flex";
+            document.getElementById("step3").style.display = "none";
+            document.getElementById("step4").style.display = "none";
+            document.getElementById("step5").style.display = "none";
+            document.getElementById("step6").style.display = "none";
+        }
+        function step3() {
+            document.getElementById("step1").style.display = "none";
+            document.getElementById("step2").style.display = "none";
+            document.getElementById("step3").style.display = "flex";
+            document.getElementById("step4").style.display = "none";
+            document.getElementById("step5").style.display = "none";
+            document.getElementById("step6").style.display = "none";
+        }
+        function step4() {
+            document.getElementById("step1").style.display = "none";
+            document.getElementById("step2").style.display = "none";
+            document.getElementById("step3").style.display = "none";
+            document.getElementById("step4").style.display = "flex";
+            document.getElementById("step5").style.display = "none";
+            document.getElementById("step6").style.display = "none";
+        }
+        function step5() {
+            document.getElementById("step1").style.display = "none";
+            document.getElementById("step2").style.display = "none";
+            document.getElementById("step3").style.display = "none";
+            document.getElementById("step4").style.display = "none";
+            document.getElementById("step5").style.display = "flex";
+            document.getElementById("step6").style.display = "none";
+        }
+        function step6() {
+            document.getElementById("step1").style.display = "none";
+            document.getElementById("step2").style.display = "none";
+            document.getElementById("step3").style.display = "none";
+            document.getElementById("step4").style.display = "none";
+            document.getElementById("step5").style.display = "none";
+            document.getElementById("step6").style.display = "flex";
+        }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            document.getElementById('successButton').click();
+        });
+    </script>
+    <script>
+        function goToSection() {
+            window.location.href = "adddata.html";
+        }
+    </script>
+</body>
+
+</html>
