@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>RSBSA Enrollment Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+  <!-- Print CSS -->
+  <style>
+    @media print {
+      @page {
+        size: 8.5in 13in;
+        /* Long bond paper */
+        margin: 0.3in;
+        /* Outer margin (small, let container handle padding) */
+      }
+
+      body {
+        background: white !important;
+        margin: 0;
+        padding: 0;
+      }
+
+      .no-print {
+        display: none !important;
+      }
+
+      .print-container {
+        box-shadow: none !important;
+        border: 1px solid black !important;
+        margin: 0 auto;
+        padding: 1in 0.8in;
+        /* Inner padding: Top/Bottom 1in, Left/Right ~0.8in */
+        width: 100%;
+      }
+
+      input,
+      select,
+      textarea {
+        border: 1px solid black !important;
+        background: white !important;
+      }
+
+      .form-section {
+        border: 1px solid black;
+        padding: 5px;
+      }
+
+      .page-break {
+        page-break-before: always;
+      }
+    }
+
+    /* Screen display */
+    .print-container {
+      border: 1px solid #ccc;
+      padding: 2rem 1.5rem;
+      background: white;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 p-6 border-2">
+  <div class="w-full border-1">
+    <div class="border-1 max-w-5xl mx-auto print-container">
+      <!-- Header -->
+      <div class="flex justify-between items-center border-b pb-4 mb-4">
+        <div>
+          <h1 class="text-lg font-bold">ANI AT KITA</h1>
+          <h2 class="text-md font-semibold">RSBSA ENROLLMENT FORM</h2>
+          <p class="text-sm">Registry System for Basic Sectors in Agriculture (RSBSA)</p>
+        </div>
+        <div class="w-24 h-24 border flex items-center justify-center text-xs">
+          2x2 PICTURE<br>PHOTO TAKEN<br>WITHIN 6 MONTHS
+        </div>
+      </div>
+
+      <!-- ENROLLMENT TYPE -->
+      <div class="grid grid-cols-3 gap-4 mb-4 border-1">
+        <div>
+          <label class="font-semibold block">ENROLLMENT TYPE:</label>
+          <div class="flex gap-4">
+            <label class="flex items-center"><input type="radio" name="enrollment_type" class="mr-2">New</label>
+            <label class="flex items-center"><input type="radio" name="enrollment_type" class="mr-2">Updating</label>
+          </div>
+        </div>
+        <div>
+          <label class="font-semibold block">Date Accomplished:</label>
+          <input type="date" class="border rounded w-full p-2">
+        </div>
+        <div>
+          <label class="font-semibold block">Reference Number:</label>
+          <input type="text" class="border rounded w-full p-2">
+        </div>
+      </div>
+
+      <!-- PART I -->
+      <h3 class="text-md font-bold bg-gray-200 p-2 mb-2">PART I: PERSONAL INFORMATION</h3>
+      <div class="grid grid-cols-4 gap-4 mb-2">
+        <input type="text" placeholder="Surname" class="border p-2 rounded">
+        <input type="text" placeholder="First Name" class="border p-2 rounded">
+        <input type="text" placeholder="Middle Name" class="border p-2 rounded">
+        <input type="text" placeholder="Extension Name" class="border p-2 rounded">
+      </div>
+      <div class="grid grid-cols-6 gap-4 mb-2">
+        <input type="text" placeholder="House/Lot/Building No./Purok" class="border p-2 rounded col-span-2">
+        <input type="text" placeholder="Street/Sitio/Subdiv" class="border p-2 rounded col-span-2">
+        <input type="text" placeholder="Barangay" class="border p-2 rounded col-span-2">
+      </div>
+      <div class="grid grid-cols-3 gap-4 mb-2">
+        <input type="text" placeholder="Municipality/City" class="border p-2 rounded">
+        <input type="text" placeholder="Province" class="border p-2 rounded">
+        <input type="text" placeholder="Region" class="border p-2 rounded">
+      </div>
+      <div class="grid grid-cols-3 gap-4 mb-2">
+        <input type="text" placeholder="Mobile Number" class="border p-2 rounded">
+        <input type="text" placeholder="Landline Number" class="border p-2 rounded">
+        <div>
+          <label class="font-semibold">Sex:</label>
+          <div class="flex gap-4">
+            <label class="flex items-center"><input type="radio" name="sex" class="mr-2">Male</label>
+            <label class="flex items-center"><input type="radio" name="sex" class="mr-2">Female</label>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-4 mb-2">
+        <input type="date" placeholder="Date of Birth" class="border p-2 rounded">
+        <input type="text" placeholder="Place of Birth" class="border p-2 rounded">
+      </div>
+      <div class="grid grid-cols-2 gap-4 mb-2">
+        <div>
+          <label class="font-semibold block">Highest Formal Education:</label>
+          <div class="grid grid-cols-2 gap-2">
+            <label><input type="checkbox"> Pre-school</label>
+            <label><input type="checkbox"> Elementary</label>
+            <label><input type="checkbox"> Junior High (1-12)</label>
+            <label><input type="checkbox"> Senior High (1-12)</label>
+            <label><input type="checkbox"> Vocational</label>
+            <label><input type="checkbox"> College</label>
+            <label><input type="checkbox"> Post Graduate</label>
+            <label><input type="checkbox"> None</label>
+          </div>
+        </div>
+        <div>
+          <label class="font-semibold block">PWD:</label>
+          <div class="flex gap-4">
+            <label><input type="radio" name="pwd" class="mr-2">Yes</label>
+            <label><input type="radio" name="pwd" class="mr-2">No</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4 mb-2">
+        <div>
+          <label class="font-semibold block">Religion:</label>
+          <div class="flex gap-4">
+            <label><input type="radio" name="religion" class="mr-2">Christianity</label>
+            <label><input type="radio" name="religion" class="mr-2">Islam</label>
+            <label><input type="radio" name="religion" class="mr-2">Others</label>
+          </div>
+        </div>
+        <div>
+          <label class="font-semibold block">Civil Status:</label>
+          <div class="flex gap-4">
+            <label><input type="radio" name="civil" class="mr-2">Single</label>
+            <label><input type="radio" name="civil" class="mr-2">Married</label>
+            <label><input type="radio" name="civil" class="mr-2">Widowed</label>
+            <label><input type="radio" name="civil" class="mr-2">Separated</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4 mb-2">
+        <input type="text" placeholder="Name of Spouse (if married)" class="border p-2 rounded">
+        <input type="text" placeholder="Mother's Maiden Name" class="border p-2 rounded">
+      </div>
+
+      <div class="grid grid-cols-2 gap-4 mb-2">
+        <div>
+          <label class="font-semibold block">Household Head?</label>
+          <div class="flex gap-4">
+            <label><input type="radio" name="household" class="mr-2">Yes</label>
+            <label><input type="radio" name="household" class="mr-2">No</label>
+          </div>
+          <input type="text" placeholder="If no, name of household head" class="border p-2 rounded mt-2 w-full">
+          <input type="text" placeholder="Relationship" class="border p-2 rounded mt-2 w-full">
+          <input type="text" placeholder="No. of living household members" class="border p-2 rounded mt-2 w-full">
+        </div>
+        <div>
+          <label class="font-semibold block">Emergency Contact</label>
+          <input type="text" placeholder="Contact Number" class="border p-2 rounded w-full">
+        </div>
+      </div>
+
+      <!-- PART II -->
+      <h3 class="text-md font-bold bg-gray-200 p-2 mb-2">PART II: FARM PROFILE</h3>
+      <div class="flex gap-6 mb-4">
+        <label><input type="checkbox" class="mr-2">Farmer</label>
+        <label><input type="checkbox" class="mr-2">Farmworker/Laborer</label>
+        <label><input type="checkbox" class="mr-2">Fisherfolk</label>
+        <label><input type="checkbox" class="mr-2">Agri Youth</label>
+      </div>
+
+      <div class="grid grid-cols-2 gap-6">
+        <div>
+          <h4 class="font-semibold mb-2">For Farmers</h4>
+          <label><input type="checkbox"> Rice</label><br>
+          <label><input type="checkbox"> Corn</label><br>
+          <label><input type="checkbox"> Others (please specify)</label><br>
+          <label><input type="checkbox"> Livestock (please specify)</label><br>
+          <label><input type="checkbox"> Poultry (please specify)</label>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-2">For Farmworkers</h4>
+          <label><input type="checkbox"> Land Preparation</label><br>
+          <label><input type="checkbox"> Planting/Transplanting</label><br>
+          <label><input type="checkbox"> Cultivation</label><br>
+          <label><input type="checkbox"> Harvesting</label><br>
+          <label><input type="checkbox"> Others (please specify)</label>
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <h4 class="font-semibold mb-2">Gross Annual Income Last Year</h4>
+        <input type="text" placeholder="Farming / Non-farming" class="border p-2 rounded w-full">
+      </div>
+
+      <!-- Footer -->
+      <div class="border-t mt-6 pt-4 text-center text-sm">
+        <p>Registry System for Basic Sectors in Agriculture (RSBSA) Enrollment Client’s Copy</p>
+        <p class="text-xs mt-2">THIS FORM IS NOT FOR SALE</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Print Button -->
+  <div class="text-center mt-6 no-print">
+    <button onclick="window.print()" class="px-4 py-2 bg-blue-600 text-white rounded">Print Form</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+
+</html>
