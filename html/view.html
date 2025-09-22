@@ -9,309 +9,284 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
 </head>
 
-<body class="bg-white text-black p-8">
-    <div class="max-w-6xl mx-auto border p-4 bg-white space-y-4">
-
-        <!-- Header -->
-        <div class="border">
-            <div class="flex justify-between items-start p-4">
-                <div class="flex items-center space-x-4 mb-6 border-b border-gray-400 pb-4">
-                    <!-- Logo (Black & White) -->
-                    <img src="../img/logo.png" alt="Department of Agriculture Logo"
-                        class="h-20 w-20 object-contain filter grayscale">
-
-                    <!-- Title -->
-                    <div class="text-center">
-                        <h1 class="text-2xl font-bold text-black" style="font-family: 'Times New Roman', serif;">
-                            Republic of the Philippines
-                        </h1>
-                        <h2 class="text-xl font-bold text-black" style="font-family: 'Times New Roman', serif;">
-                            Department of Agriculture
-                        </h2>
-                        <p class="text-base text-black" style="font-family: 'Times New Roman', serif;">
-                            Farmer Information Registration Form
-                        </p>
+<body class="p-2 flex justify-center">
+    <div class="relative flex flex-col items-center border-[2.5px] border-black bg-white space-y-4"> <!-- Header -->
+        <div class=" w-full">
+            <div class="flex justify-between items-start p-4"> <!-- Left Section: Logo + Title + Enrollment -->
+                <div class="flex flex-col flex-1"> <!-- Logo + Title -->
+                    <div class="flex items-center space-x-4 mb-4 border-b border-gray-400 pb-4"> <!-- Logo --> <img
+                            src="../img/logo.png" alt="Department of Agriculture Logo"
+                            class="h-40 w-40 object-contain filter grayscale"> <!-- Title -->
+                        <div class="text-start flex-1">
+                            <h1 class="text-2xl font-bold text-black uppercase leading-tight"
+                                style="font-family: 'Times New Roman', serif;"> ANI AT KITA </h1>
+                            <h1 class="text-2xl font-bold text-black uppercase leading-tight"
+                                style="font-family: 'Times New Roman', serif;"> RSBSA ENROLLMENT FORM </h1>
+                            <h2 class="text-lg font-bold text-black uppercase leading-tight"
+                                style="font-family: 'Times New Roman', serif;"> REGISTRY SYSTEM FOR BASIC SECTOR IN
+                                AGRICULTURE </h2>
+                        </div>
+                    </div> <!-- Enrollment Section -->
+                    <div class="flex flex-col text-black space-y-2 px-2" style="font-family: 'Times New Roman', serif;">
+                        <!-- Row 1: Enrollment Type & Date Administered -->
+                        <div class="flex gap-5 items-start w-full space-x-2"> <span class="font-bold whitespace-nowrap">
+                                Enrollment Type &amp; Date Administered: </span> <!-- Enrollment Type (checkboxes) -->
+                            <div class="flex items-baseline space-x-2"> <label class="flex items-start space-x-1">
+                                    <input type="checkbox" class="w-4 h-4 border border-black"> <span>New</span>
+                                </label> <label class="flex items-start space-x-1"> <input type="checkbox"
+                                        class="w-4 h-4 border border-black"> <span>Updating</span> </label> </div>
+                            <!-- Date Administered (boxes) -->
+                            <div class="flex space-x-1">
+                                <div class="w-6 h-6 border border-black"></div>
+                                <div class="w-6 h-6 border border-black"></div>
+                                <div class="w-2"></div>
+                                <div class="w-6 h-6 border border-black"></div>
+                                <div class="w-6 h-6 border border-black"></div>
+                                <div class="w-2"></div>
+                                <div class="w-6 h-6 border border-black"></div>
+                                <div class="w-6 h-6 border border-black"></div>
+                                <div class="w-6 h-6 border border-black"></div>
+                                <div class="w-6 h-6 border border-black"></div>
+                            </div>
+                        </div> <!-- Row 2: Reference Number -->
+                        <div class="flex items-center space-x-2 w-full"> <span class="font-bold">Reference
+                                Number:</span>
+                            <div class="flex space-x-1 flex-1"> <!-- Reference boxes -->
+                                <div class="w-6 h-6 border border-black"></div>
+                                <div class="w-6 h-6 border border-black"></div>
+                                <div class="w-6 h-6 border border-black"></div>
+                                <div class="w-6 h-6 border border-black"></div>
+                                <div class="w-2"></div>
+                                <div class="w-6 h-6 border border-black"></div>
+                                <div class="w-6 h-6 border border-black"></div>
+                                <div class="w-6 h-6 border border-black"></div>
+                                <div class="w-6 h-6 border border-black"></div>
+                                <div class="w-2"></div>
+                                <div class="w-6 h-6 border border-black"></div>
+                                <div class="w-6 h-6 border border-black"></div>
+                                <div class="w-6 h-6 border border-black"></div>
+                                <div class="w-6 h-6 border border-black"></div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="text-center border w-32 h-32 flex flex-col items-center justify-center text-xs">
+                </div> <!-- Right Section: Picture Box -->
+                <div class="text-center border w-40 h-40 flex flex-col items-center justify-center text-xs ml-4">
                     <p>2x2</p>
                     <p>PICTURE</p>
                     <p>Photo taken</p>
                     <p>within 6 months</p>
                 </div>
             </div>
-        </div>
-
-        <!-- Part I: Personal Information -->
-        <div class="border">
-            <h3 class="font-bold bg-gray-200 px-2 py-1 border-b">PART I: PERSONAL INFORMATION</h3>
-
+        </div> <!-- Part I: Personal Information -->
+        <div class="">
+            <h3 class="text-white font-bold bg-black px-2 py-1 border-b">PART I: PERSONAL INFORMATION</h3>
             <!-- Name row -->
-            <div class="border border-collapse text-sm">
-                <!-- Row 1 -->
-                <div class="grid grid-cols-2">
-                    <div class="p-2 border">
-                        <label>Surname</label>
-                        <input type="text" class="w-full border p-1 mt-1">
-                    </div>
-                    <div class="p-2 border">
-                        <label>First Name</label>
-                        <input type="text" class="w-full border p-1 mt-1">
-                    </div>
+            <div class="border border-collapse text-sm"> <!-- Row 1 -->
+                <div class="grid grid-cols-2 gap-8">
+                    <div class=" "> <input type="text"
+                            class="block py-1 w-full text-sm text-center text-gray-900 bg-transparent border-0 border-b-[2.5px] border-gray-600 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 peer"
+                            placeholder="" /> <label class="flex font-bold justify-center">Surname</label> </div>
+                    <div class=" "> <input type="text"
+                            class="block py-1 w-full text-sm text-center text-gray-900 bg-transparent border-0 border-b-[2.5px] border-gray-600 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 peer"
+                            placeholder="" /> <label class="flex font-bold justify-center">First Name</label> </div>
                 </div>
-
                 <!-- Row 2 -->
-                <div class="grid grid-cols-3">
-                    <div class="p-2 border">
-                        <label>Middle Name</label>
-                        <input type="text" class="w-full border p-1 mt-1">
+                <div class="grid grid-cols-2 gap-8">
+                    <div class=" ">
+                        <input type="text"
+                            class="block py-1 w-full text-sm text-center text-gray-900 bg-transparent border-0 border-b-[2.5px] border-gray-600 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 peer"
+                            placeholder="" /> <label class="flex font-bold justify-center">Middle Name</label>
                     </div>
-                    <div class="p-2 border">
-                        <label>Extension Name</label>
-                        <input type="text" class="w-full border p-1 mt-1">
+                    <div class="flex flex-row w-full items-center gap-5">
+                        <div class="w-full">
+                            <input type="text"
+                                class="block py-1 w-full text-sm text-center text-gray-900 bg-transparent border-0 border-b-[2.5px] border-gray-600 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 peer"
+                                placeholder="" /> <label class="flex font-bold justify-center">Extension Name</label>
+                        </div>
+                        <div
+                            class="flex flex-row items-center h-5 py-4 -mb-5 -mr-0.5 gap-5 justify-center w-full border border-black">
+                            <label class="text-sm font-bold ">SEX</label>
+                            <div class="flex flex-row gap-5 ">
+                                <div class="flex flex-row gap-2 items-center"> <input type="checkbox"> <label
+                                        class="text-base font-medium">Male</label> </div>
+                                <div class="flex flex-row gap-2 items-center"> <input type="checkbox"> <label
+                                        class="text-base font-medium">Female</label> </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="p-2 border">
-                        <label>Sex</label>
-                        <div class="mt-1">
-                            <label><input type="checkbox" class="mr-1"> M</label><br>
-                            <label><input type="checkbox" class="mr-1"> F</label>
+                </div>
+            </div> <!-- Address row -->
+            <div class="w-full flex flex-row border-[2.5px] border-black border-l-0 border-r-0">
+                <div class=" pt-2 pl-2 pb-0"> 
+                    <label class="flex font-bold mt-2.5">ADDRESS</label> </div>
+                <div class="flex flex-col w-full px-2 pt-2 pb-0">
+                    <div class="flex flex-row w-full items-center justify-between gap-2 py-2 text-sm">
+                        <div class="flex flex-col w-full items-center"> <input type="text"
+                                class="w-full p-1 border-[3px] border-gray-300"> <label
+                                class="font-medium">HOSUE/LOT/BLDG. NO./PUROK</label> </div>
+                        <div class="flex flex-col w-full items-center"> <input type="text"
+                                class="w-full border-[3px] p-1 border-gray-300"> <label
+                                class="font-medium">STREET/SITIO/SUBDIV.</label> </div>
+                        <div class="flex flex-col w-full items-center"> <input type="text"
+                                class="w-full border-[3px] p-1 border-gray-300"> <label
+                                class="font-medium">BARANGAY</label> </div>
+                    </div>
+                    <div class="flex flex-row w-full items-center justify-between gap-2 py-2 text-sm">
+                        <div class="flex flex-col w-full items-center"> <input type="text"
+                                class="w-full border-[3px] p-1 border-gray-300"> <label
+                                class="font-medium">MUNICIPALITY/CITY</label> </div>
+                        <div class="flex flex-col w-full items-center"> <input type="text"
+                                class="w-full border-[3px] p-1 border-gray-300"> <label
+                                class="font-medium">PROVINCE</label> </div>
+                        <div class="flex flex-col w-full items-center"> <input type="text"
+                                class="w-full border-[3px] p-1 border-gray-300"> <label
+                                class="font-medium">REGION</label> </div>
+                    </div>
+                </div>
+            </div> <!-- Contact / DOB / Civil Status -->
+            <div class="flex flex-row items-center w-full "> <!-- Left -->
+                <div class="flex flex-col w-full border-0 border-black border-r-[2.5px] border-b-[2.5px]">
+                    <div class="flex flex-row items-center p-2 gap-10 border-b-[2.5px] border-black ">
+                        <div> <label class="flex text-sm font-bold ">MOBILE NUMBER</label>
+                            <div class="flex flex-row items-center"> <input type="text" class="h-5 w-5"> <input
+                                    type="text" class="h-5 w-5"> <input type="text" class="h-5 w-5"> <input type="text"
+                                    class="h-5 w-5"> <input type="text" class="h-5 w-5"> <input type="text"
+                                    class="h-5 w-5"> <input type="text" class="h-5 w-5"> <input type="text"
+                                    class="h-5 w-5"> <input type="text" class="h-5 w-5"> <input type="text"
+                                    class="h-5 w-5"> <input type="text" class="h-5 w-5"> <input type="text"
+                                    class="h-5 w-5"> </div>
+                        </div>
+                        <div> <label class="flex text-sm font-bold ">LANDLINE NUMBER</label>
+                            <div class="flex flex-row items-center"> <input type="text" class="h-5 w-5"> <input
+                                    type="text" class="h-5 w-5"> <input type="text" class="h-5 w-5"> <input type="text"
+                                    class="h-5 w-5"> <input type="text" class="h-5 w-5"> <input type="text"
+                                    class="h-5 w-5"> <input type="text" class="h-5 w-5"> <input type="text"
+                                    class="h-5 w-5"> <input type="text" class="h-5 w-5"> <input type="text"
+                                    class="h-5 w-5"> <input type="text" class="h-5 w-5"> </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-2 justify-center ">
+                        <div class="border-r-[2.5px] p-2 border-black"> <label class="flex text-sm font-bold ">DATE OF
+                                BIRTH</label>
+                            <div class="flex flex-row items-center">
+                                <div class="flex flex-col items-center gap-0"> <input type="text" class="h-6 w-6">
+                                    <label class="text-[13px] -mt-0.5 font-medium">M</label>
+                                </div>
+                                <div class="flex flex-col items-center gap-0"> <input type="text" class="h-6 w-6">
+                                    <label class="text-[13px] -mt-0.5 font-medium">M</label>
+                                </div>
+                                <div class="flex flex-col items-center gap-0"> <input type="text" class="h-6 w-6">
+                                    <label class="text-[13px] -mt-0.5 font-medium">D</label>
+                                </div>
+                                <div class="flex flex-col items-center gap-0"> <input type="text" class="h-6 w-6">
+                                    <label class="text-[13px] -mt-0.5 font-medium">D</label>
+                                </div>
+                                <div class="flex flex-col items-center gap-0"> <input type="text" class="h-6 w-6">
+                                    <label class="text-[13px] -mt-0.5 font-medium">Y</label>
+                                </div>
+                                <div class="flex flex-col items-center gap-0"> <input type="text" class="h-6 w-6">
+                                    <label class="text-[13px] -mt-0.5 font-medium">Y</label>
+                                </div>
+                                <div class="flex flex-col items-center gap-0"> <input type="text" class="h-6 w-6">
+                                    <label class="text-[13px] -mt-0.5 font-medium">Y</label>
+                                </div>
+                                <div class="flex flex-col items-center gap-0"> <input type="text" class="h-6 w-6">
+                                    <label class="text-[13px] -mt-0.5 font-medium">Y</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2"> <label class="flex text-sm font-bold ">PLACE OF BIRTH</label>
+                            <div class="flex flex-col items-center">
+                                <div class="w-full"> <input type="text"
+                                        class="block py-1 h-5 w-full text-sm text-center text-gray-900 bg-transparent border-0 border-b-[2.5px] border-gray-600 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 peer"
+                                        placeholder=""> <label
+                                        class="flex font-medium justify-center text-xs">MUNICIPALITY</label> </div>
+                                <div class="flex flex-row gap-2">
+                                    <div class="w-full"> <input type="text"
+                                            class="block py-1 h-5 w-full text-sm text-center text-gray-900 bg-transparent border-0 border-b-[2.5px] border-gray-600 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 peer"
+                                            placeholder=""> <label
+                                            class="flex font-medium justify-center text-xs">PROVINCE</label> </div>
+                                    <div class="w-full"> <input type="text"
+                                            class="block py-1 h-5 w-full text-sm text-center text-gray-900 bg-transparent border-0 border-b-[2.5px] border-gray-600 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 peer"
+                                            placeholder=""> <label
+                                            class="flex font-medium justify-center text-xs">COUNTRY</label> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- Right -->
+                <div class="w-full flex flex-col p-2 border-0 border-black border-b-[2.5px]">
+                    <div class="w-full flex flex-col gap-2 pt-[-]"> <label class="text-base font-bold">HIGHEST FORMAL
+                            EDUCATION:</label>
+                        <div class=" flex flex-row p-2 gap-4">
+                            <div class="flex flex-col">
+                                <div class="w-full"> <input type="checkbox" class="h-5 w-5"> <label
+                                        for="">Pre-School</label> </div>
+                                <div class="w-full"> <input type="checkbox" class="h-5 w-5"> <label
+                                        for="">Elementary</label> </div>
+                                <div class="w-full"> <input type="checkbox" class="h-5 w-5"> <label for="">High
+                                        School(Non-K-12)</label> </div>
+                            </div>
+                            <div class="flex flex-col">
+                                <div class="w-full"> <input type="checkbox" class="h-5 w-5"> <label for="">Junior High
+                                        School (K-12) </label> </div>
+                                <div class="w-full"> <input type="checkbox" class="h-5 w-5"> <label for="">Senior High
+                                        School (K-12) </label> </div>
+                                <div class="w-full"> <input type="checkbox" class="h-5 w-5"> <label
+                                        for="">College</label> </div>
+                            </div>
+                            <div class=" flex flex-col">
+                                <div class="w-full"> <input type="checkbox" class="h-5 w-5"> <label
+                                        for="">Vocational</label> </div>
+                                <div class="w-full"> <input type="checkbox" class="h-5 w-5"> <label for="">Post
+                                        Graduate</label> </div>
+                                <div class="w-full"> <input type="checkbox" class="h-5 w-5"> <label for="">None</label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Address row -->
-            <div class="grid grid-cols-3 border border-collapse text-sm">
-                <div class="p-2 border">
-                    <label>House/Lot/BLDG. No.</label>
-                    <input type="text" class="w-full border p-1 mt-1">
-                </div>
-                <div class="p-2 border">
-                    <label>Street/Sitio/Subdv.</label>
-                    <input type="text" class="w-full border p-1 mt-1">
-                </div>
-                <div class="p-2 border">
-                    <label>Barangay</label>
-                    <input type="text" class="w-full border p-1 mt-1">
-                </div>
-            </div>
-
-            <div class="grid grid-cols-3 border border-collapse text-sm">
-                <div class="p-2 border">
-                    <label>Municipality/City</label>
-                    <input type="text" class="w-full border p-1 mt-1">
-                </div>
-                <div class="p-2 border">
-                    <label>Province</label>
-                    <input type="text" class="w-full border p-1 mt-1">
-                </div>
-                <div class="p-2 border">
-                    <label>Region</label>
-                    <input type="text" class="w-full border p-1 mt-1">
-                </div>
-            </div>
-
-            <!-- Contact / DOB / Civil Status -->
-            <div class="grid grid-cols-2 items-stretch">
-
-                <!-- LEFT COLUMN -->
-                <div class="flex flex-col justify-between border p-4 space-y-4">
-                    <!-- Contact Number -->
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700">Contact Number</label>
-                        <input type="text" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm">
-                    </div>
-
-                    <!-- Date of Birth + Place of Birth -->
-                    <div class="flex space-x-4">
-                        <div class="w-1/2">
-                            <label class="block text-sm font-medium text-gray-700">Date of Birth</label>
-                            <input type="date" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm">
-                        </div>
-                        <div class="w-1/2">
-                            <label class="block text-sm font-medium text-gray-700">Place of Birth</label>
-                            <input type="text" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm">
-                        </div>
-                    </div>
-
-                    <!-- Religion -->
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700">Religion</label>
-                        <input type="text" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm">
-                    </div>
-
-                    <!-- Civil Status -->
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700">Civil Status</label>
-                        <select class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm">
-                            <option>Single</option>
-                            <option>Married</option>
-                            <option>Widowed</option>
-                            <option>Separated</option>
-                        </select>
-                    </div>
-
-                    <!-- Name of Spouse -->
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700">Name of Spouse (if married)</label>
-                        <input type="text" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm">
-                    </div>
-
-                    <!-- Household Head -->
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700">Household Head</label>
-                        <input type="text" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm">
-                    </div>
-
-                    <!-- Relationship -->
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700">Relationship</label>
-                        <input type="text" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm">
-                    </div>
-
-                    <!-- Living Household Members -->
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700">No. of Living Household Members</label>
-                        <input type="number" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm">
-                    </div>
-
-                    <!-- No. of Male + Female -->
-                    <div class="flex space-x-4">
-                        <div class="w-1/2">
-                            <label class="block text-sm font-medium text-gray-700">No. of Male</label>
-                            <input type="number" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm">
-                        </div>
-                        <div class="w-1/2">
-                            <label class="block text-sm font-medium text-gray-700">No. of Female</label>
-                            <input type="number" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- RIGHT COLUMN -->
-                <div class="flex flex-col justify-between border p-4 rounded-lg space-y-4">
-                    <!-- Highest Formal Education -->
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700">Highest Formal Education</label>
-                        <input type="text" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm">
-                    </div>
-
-                    <!-- PWD -->
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700">Person with Disability (PWD)</label>
-                        <div class="mt-1 flex space-x-4">
-                            <label><input type="radio" name="pwd" value="No" class="mr-1"> No</label>
-                            <label><input type="radio" name="pwd" value="Yes" class="mr-1"> Yes</label>
-                        </div>
-                    </div>
-
-                    <!-- 4P's Beneficiary -->
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700">4P's Beneficiary</label>
-                        <div class="mt-1 flex space-x-4">
-                            <label><input type="radio" name="4ps" value="No" class="mr-1"> No</label>
-                            <label><input type="radio" name="4ps" value="Yes" class="mr-1"> Yes</label>
-                        </div>
-                    </div>
-
-                    <!-- Indigenous Group -->
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700">Member of Indigenous Group</label>
-                        <div class="mt-1 flex space-x-4 mb-2">
-                            <label><input type="radio" name="indigenous" value="No" class="mr-1"> No</label>
-                            <label><input type="radio" name="indigenous" value="Yes" class="mr-1"> Yes</label>
-                        </div>
-                        <input type="text" placeholder="If yes, specify"
-                            class="block w-full border border-gray-300 rounded-md shadow-sm">
-                    </div>
-
-                    <!-- Government ID -->
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700">With Government ID?</label>
-                        <div class="mt-1 flex space-x-4">
-                            <label><input type="radio" name="govid" value="No" class="mr-1"> No</label>
-                            <label><input type="radio" name="govid" value="Yes" class="mr-1"> Yes</label>
-                        </div>
-                    </div>
-
-                    <!-- Farmer Organization -->
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700">Member of Farmer Organization</label>
-                        <div class="mt-1 flex space-x-4 mb-2">
-                            <label><input type="radio" name="farmerorg" value="No" class="mr-1"> No</label>
-                            <label><input type="radio" name="farmerorg" value="Yes" class="mr-1"> Yes</label>
-                        </div>
-                        <input type="text" placeholder="If yes, specify"
-                            class="block w-full border border-gray-300 rounded-md shadow-sm">
-                    </div>
-
-                    <!-- Emergency Contact -->
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700">Person to Notify in Case of
-                            Emergency</label>
-                        <input type="text" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm">
-                    </div>
-
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700">Emergency Contact Number</label>
-                        <input type="text" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm">
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Part II: Farm Profile -->
-        <div class="border">
-            <h3 class="font-bold bg-gray-200 px-2 py-1 border-b">PART II: FARM PROFILE</h3>
-            <div class="p-2 border-b text-sm border">
-                <label class="mr-4"><input type="checkbox" class="mr-1"> Farmer</label>
-                <label class="mr-4"><input type="checkbox" class="mr-1"> Farmworker/Laborer</label>
+        </div> <!-- Part II: Farm Profile -->
+        <div class="">
+            <h3 class="text-white font-bold bg-black px-2 py-1 border-b">PART II: FARM PROFILE</h3>
+            <div class="p-2 border-b text-sm border"> <label class="mr-4"><input type="checkbox" class="mr-1">
+                    Farmer</label> <label class="mr-4"><input type="checkbox" class="mr-1"> Farmworker/Laborer</label>
                 <label><input type="checkbox" class="mr-1"> Fisherfolk</label>
             </div>
             <div class="grid grid-cols-3 border border-collapse text-sm">
                 <div class="p-2 border">
-                    <p class="font-semibold">For Farmers:</p>
-                    <label><input type="checkbox" class="mr-1"> Rice</label><br>
-                    <label><input type="checkbox" class="mr-1"> Corn</label><br>
-                    <label><input type="checkbox" class="mr-1"> Other Crops: ______</label><br>
-                    <label><input type="checkbox" class="mr-1"> Livestock: ______</label><br>
-                    <label><input type="checkbox" class="mr-1"> Poultry: ______</label>
+                    <p class="font-semibold">For Farmers:</p> <label><input type="checkbox" class="mr-1">
+                        Rice</label><br> <label><input type="checkbox" class="mr-1"> Corn</label><br> <label><input
+                            type="checkbox" class="mr-1"> Other Crops: ______</label><br> <label><input type="checkbox"
+                            class="mr-1"> Livestock: ______</label><br> <label><input type="checkbox" class="mr-1">
+                        Poultry: ______</label>
                 </div>
                 <div class="p-2 border">
-                    <p class="font-semibold">For Farmworkers:</p>
-                    <label><input type="checkbox" class="mr-1"> Land Preparation</label><br>
-                    <label><input type="checkbox" class="mr-1"> Planting/Transplanting</label><br>
-                    <label><input type="checkbox" class="mr-1"> Cultivation</label><br>
-                    <label><input type="checkbox" class="mr-1"> Harvesting</label><br>
+                    <p class="font-semibold">For Farmworkers:</p> <label><input type="checkbox" class="mr-1"> Land
+                        Preparation</label><br> <label><input type="checkbox" class="mr-1">
+                        Planting/Transplanting</label><br> <label><input type="checkbox" class="mr-1">
+                        Cultivation</label><br> <label><input type="checkbox" class="mr-1"> Harvesting</label><br>
                     <label><input type="checkbox" class="mr-1"> Others: ______</label>
                 </div>
                 <div class="p-2 border">
-                    <p class="font-semibold">For Fisherfolk:</p>
-                    <label><input type="checkbox" class="mr-1"> Fish Capture</label><br>
-                    <label><input type="checkbox" class="mr-1"> Aquaculture</label><br>
-                    <label><input type="checkbox" class="mr-1"> Gleaning</label><br>
-                    <label><input type="checkbox" class="mr-1"> Fish Processing</label><br>
-                    <label><input type="checkbox" class="mr-1"> Fish Vending</label><br>
-                    <label><input type="checkbox" class="mr-1"> Others: ______</label>
+                    <p class="font-semibold">For Fisherfolk:</p> <label><input type="checkbox" class="mr-1"> Fish
+                        Capture</label><br> <label><input type="checkbox" class="mr-1"> Aquaculture</label><br>
+                    <label><input type="checkbox" class="mr-1"> Gleaning</label><br> <label><input type="checkbox"
+                            class="mr-1"> Fish Processing</label><br> <label><input type="checkbox" class="mr-1"> Fish
+                        Vending</label><br> <label><input type="checkbox" class="mr-1"> Others: ______</label>
                 </div>
             </div>
-
             <div class="grid grid-cols-2 border border-collapse text-sm">
-                <div class="p-2 border">
-                    <label>Gross Annual Income Last Year (Farming):</label>
-                    <input type="text" class="w-full border p-1 mt-1">
-                </div>
-                <div class="p-2 border">
-                    <label>Gross Annual Income Last Year (Non-Farming):</label>
-                    <input type="text" class="w-full border p-1 mt-1">
-                </div>
+                <div class="p-2 border"> <label>Gross Annual Income Last Year (Farming):</label> <input type="text"
+                        class="w-full border p-1 mt-1"> </div>
+                <div class="p-2 border"> <label>Gross Annual Income Last Year (Non-Farming):</label> <input type="text"
+                        class="w-full border p-1 mt-1"> </div>
             </div>
         </div>
-
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <script src="../js/tailwind.config.js"></script>
 </body>
 
 </html>
