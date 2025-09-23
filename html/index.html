@@ -228,7 +228,7 @@
                     </div>
                 </div>
                 <!-- Contact, DOB, Education Section -->
-                <div class="flex flex-col md:flex-row  w-full">
+                <div class="flex flex-col md:flex-row w-full">
                     <!-- Left half -->
                     <div class="flex flex-col w-full">
                         <div
@@ -352,7 +352,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col w-full   border-[1.5px] border-l-0 border-black md:rounded-r-none ">
+                        <div class="flex flex-col w-full border-[1.5px] border-l-0 border-black md:rounded-r-none ">
                             <!-- Civil Status and Religion -->
                             <div class="p-2 border-b-[1.5px] border-l-0  border-black">
                                 <div class="flex flex-row  py-2 items-center gap-1">
@@ -376,7 +376,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="flex flex-row  py-2 w-full items-center gap-1">
+                                <div class="flex flex-row py-2 w-full items-center gap-1">
                                     <label class="font-bold w-[160px] ">CIVIL STATUS:</label>
                                     <div class="flex flex-row items-center gap-4  w-full justify-between text-sm">
                                         <div class="flex flex-row gap-1 items-center ">
@@ -399,8 +399,8 @@
                                 </div>
                                 <div class="flex flex-col mt-2">
                                     <label class="font-bold">NAME OF SPOUSE</label>
-                                    <div class="flex flex-row w-full  " >
-                                        <label class="font-bold   w-[128px] mr-8">IF MARIED:</label>
+                                    <div class="flex flex-row w-full  ">
+                                        <label class="font-bold w-[128px] mr-8">IF MARIED:</label>
                                         <input type="text"
                                             class="block w-full h-5 text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer"
                                             placeholder=" ">
@@ -511,7 +511,7 @@
                             </div>
                         </div>
                         <div
-                            class="w-full flex flex-row p-2 py-3 gap-4 items-center border-[1.5px] border-t-0 border-r-0 border-black">
+                            class="w-full flex flex-row p-2 py-3 gap-4  border-[1.5px] border-t-0 border-r-0 border-black">
                             <div class="">
                                 <label class="text-base font-bold">PERSON WITH DISABILITY (PWD)?</label>
                             </div>
@@ -532,254 +532,333 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Member of an Indigenous Group? -->
                         <div
-                            class="flex flex-col w-full  border-[1.5px] border-r-0 border-black md:rounded-l-none md:mt-0">
-                            <!-- 4P's Beneficiary? -->
-                            <div class="p-2 border-b-[2.5px] border-black">
-                                <label class="font-bold">4P's Beneficiary?</label>
-                                <div class="flex flex-wrap items-center gap-4 mt-2 text-sm">
-                                    <label class="flex items-center gap-1"><input type="checkbox"
-                                            class="h-4 w-4 rounded-sm border-black"><span>Yes</span></label>
-                                    <label class="flex items-center gap-1"><input type="checkbox"
-                                            class="h-4 w-4 rounded-sm border-black"><span>No</span></label>
+                            class="flex flex-col w-full border-[1.5px] border-r-0 border-black md:rounded-l-none md:mt-0">
+                            <div
+                                class="w-full flex flex-row p-2 py-1 gap-2 items-center border-[1.5px] border-t-0 border-l-0 border-r-0 border-b-0 border-black">
+                                <div class="">
+                                    <label class="text-sm font-bold">4P's Beneficiary?</label>
+                                </div>
+                                <div class="flex flex-row gap-4 ml-[143px]">
+                                    <div class="flex flex-row gap-4">
+                                        <div class="w-full flex items-center flex-row gap-2">
+                                            <label class="flex items-center gap-2">
+                                                <input type="checkbox" class="h-4 w-4 rounded-sm border-black">
+                                                <span>Yes</span>
+                                            </label>
+                                        </div>
+                                        <div class="flex flex-row items-center gap-4">
+                                            <label class="flex gap-2 items-center">
+                                                <input type="checkbox" class="h-4 w-4 rounded-sm border-black">
+                                                <span>No</span>
+                                            </label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-
-                            <!-- Member of an Indigenous Group? -->
-                            <div class="p-2 border-b-[1.5px] border-black">
-                                <label class="font-bold">Member of an Indigenous Group?</label>
-                                <div class="flex flex-wrap items-center gap-4 mt-2 text-sm">
-                                    <label class="flex items-center gap-1"><input type="checkbox"
-                                            class="h-4 w-4 rounded-sm border-black"><span>Yes</span></label>
-                                    <label class="flex items-center gap-1"><input type="checkbox"
-                                            class="h-4 w-4 rounded-sm border-black"><span>No</span></label>
+                            <div
+                                class="w-full flex flex-row p-2 py-1 gap-4 items-center border-[1.5px] border-t-0 border-l-0 border-r-0 border-b-0 border-black">
+                                <div class="">
+                                    <label class="text-sm font-normal">Member of an </label> <label
+                                        class="text-sm font-bold">Indigenous Group?</label>
                                 </div>
-                                <div class="flex flex-col mt-2">
-                                    <p class="text-xs italic">If yes, specify</p>
-                                    <input type="text"
-                                        class="block py-1 w-full text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer mt-2"
-                                        placeholder=" ">
+                                <div class="flex flex-row gap-4 ml-[40px]">
+                                    <div class="flex flex-row gap-4">
+                                        <div class="w-full flex items-center flex-row gap-2">
+                                            <label class="flex items-center gap-2">
+                                                <input type="checkbox" class="h-4 w-4 rounded-sm border-black">
+                                                <span>Yes</span>
+                                            </label>
+                                        </div>
+                                        <div class="flex flex-row items-center gap-4">
+                                            <label class="flex gap-2 items-center">
+                                                <input type="checkbox" class="h-4 w-4 rounded-sm border-black">
+                                                <span>No</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="w-full flex flex-col py-1 border-[1.5px] border-t-0 border-r-0 border-l-0 border-black">
+                                <div class="flex flex-row ml-[10px]">
+                                    <div class="flex flex-row">
+                                        <div class="flex flex-row w-full">
+                                            <p class="text-xs italic w-[130px] ">If yes, specify:</p>
+                                            <input type="text"
+                                                class="ml-[-60px] block w-[372px] border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer"
+                                                placeholder=" ">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
                             <!-- With Government ID? -->
-                            <div class="p-2 border-b-[1.5px] border-black">
-                                <label class="font-bold">With Government ID?</label>
-                                <div class="flex flex-wrap items-center gap-4 mt-2 text-sm">
-                                    <label class="flex items-center gap-1"><input type="checkbox"
-                                            class="h-4 w-4 rounded-sm border-black"><span>Yes</span></label>
-                                    <label class="flex items-center gap-1"><input type="checkbox"
-                                            class="h-4 w-4 rounded-sm border-black"><span>No</span></label>
+                            <div
+                                class="w-full flex flex-row p-2 py-1 gap-4 items-center border-[1.5px] border-t-0 border-l-0 border-r-0 border-b-0 border-black">
+                                <div class="">
+                                    <label class="text-sm font-normal">With</label> <label
+                                        class="text-sm font-bold">Governement ID:</label>
                                 </div>
-                                <div class="flex flex-col mt-2">
-                                    <p class="text-xs italic">If yes, specify ID Type:</p>
-                                    <input type="text"
-                                        class="block py-1 w-full text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer mt-2"
-                                        placeholder=" ">
-                                    <label class="text-xs font-bold mt-1">ID Number:</label>
-                                    <input type="text"
-                                        class="block py-1 w-full text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer mt-1"
-                                        placeholder=" ">
+                                <div class="flex flex-row gap-4 ml-[20px]">
+                                    <div class="flex flex-row gap-4">
+                                        <div class="w-full flex items-center flex-row gap-2">
+                                            <label class="flex items-center gap-2">
+                                                <input type="checkbox" class="h-4 w-4 rounded-sm border-black">
+                                                <span>Yes</span>
+                                            </label>
+                                        </div>
+                                        <div class="flex flex-row items-center gap-4">
+                                            <label class="flex gap-2 items-center">
+                                                <input type="checkbox" class="h-4 w-4 rounded-sm border-black">
+                                                <span>No</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="w-full flex flex-col  border-[1.5px] border-t-0 border-r-0 border-l-0 border-black">
+                                <div class="flex flex-row ml-[10px]">
+                                    <div class="flex flex-col">
+                                        <div class="flex flex-row w-full">
+                                            <p class="text-sm w-[150px] ml-[3px]">If yes, specify ID Type:</p>
+                                            <input type="text"
+                                                class="ml-[px] block w-[290px] text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer "
+                                                placeholder=" ">
+                                        </div>
+                                        <div class="flex flex-row py-1">
+                                            <label class="text-sm font-bold w-[90px] ml-[62px]">ID Number:</label>
+                                            <input type="text"
+                                                class="ml-[px] block w-[292px] border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer "
+                                                placeholder=" ">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
                             <!-- Member of any Farmers Association/Cooperative? -->
-                            <div class="p-2 border-b-[1.5px] border-black">
-                                <label class="font-bold">Member of any Farmers Association/Cooperative?</label>
-                                <div class="flex flex-wrap items-center gap-4 mt-2 text-sm">
-                                    <label class="flex items-center gap-1"><input type="checkbox"
-                                            class="h-4 w-4 rounded-sm border-black"><span>Yes</span></label>
-                                    <label class="flex items-center gap-1"><input type="checkbox"
-                                            class="h-4 w-4 rounded-sm border-black"><span>No</span></label>
+                            <div
+                                class="w-full flex flex-col border-[1.5px] border-t-0 border-r-0 border-b-0 border-l-0 border-black">
+                                <div class="flex flex-row p-2 border-b-0 border-black gap-1">
+                                    <label class="font-normal">Member of any </label><label class="font-bold ">Farmers
+                                        Association/Cooperative?</label>
+                                    <div class="flex flex-row ml-[10px]">
+                                        <div class="flex flex-row">
+                                            <div class="flex flex-row items-center gap-4 text-sm">
+                                                <label class="flex items-center gap-1">
+                                                    <input type="checkbox" class="h-4 w-4 rounded-sm border-black">
+                                                    <span>Yes</span></label>
+                                                <label class="flex items-center gap-1">
+                                                    <input type="checkbox" class="h-4 w-4 rounded-sm border-black">
+                                                    <span>No</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="flex flex-col mt-2">
-                                    <p class="text-xs italic">If yes, specify:</p>
-                                    <input type="text"
-                                        class="block py-1 w-full text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer mt-2"
-                                        placeholder=" ">
+                            </div>
+                            <div
+                                class="w-full flex flex-col border-[1.5px] py-1 border-l-0 border-t-0 border-r-0  border-black">
+                                <div class="flex flex-col ml-[10px]">
+                                    <div class="flex flex-row">
+                                        <div class="flex flex-row ">
+                                            <p class="text-sm w-[90px]">If yes, specify:</p>
+                                            <input type="text"
+                                                class="ml-[-10px] block w-[365px] text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer "
+                                                placeholder=" ">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
                             <!-- Person to Notify in Case of Emergency -->
-                            <div class="p-2">
-                                <label class="font-bold">PERSON TO NOTIFY IN CASE OF EMERGENCY:</label>
-                                <input type="text"
-                                    class="block py-1 w-full text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer mt-2"
-                                    placeholder=" ">
-                                <label class="text-xs font-bold mt-1">CONTACT NUMBER:</label>
-                                <input type="text"
-                                    class="block py-1 w-full text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer mt-1"
-                                    placeholder=" ">
+                            <div
+                                class="w-full flex flex-col border-[1.5px] py-1 border-l-0 border-t-0 border-r-0 border-black">
+                                <div class="flex flex-col ml-[10px]">
+                                    <div class="flex flex-row">
+                                        <div class="flex flex-col">
+                                            <label class="font-bold">NAME OF SPOUSE</label>
+                                            <div class="flex flex-row ">
+                                                <label class="font-bold w-[150px]">IF MARIED:</label>
+                                                <input type="text"
+                                                    class="ml-[-50px] block w-[345px] h-4 mt-1 text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer"
+                                                    placeholder=" ">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
-            </div>
-            <!-- Part II: Farm Profile -->
-            <div class="w-full ">
-                <h3 class="text-white font-bold bg-black px-4 py-2 text-lg">PART II: FARM PROFILE</h3>
-                <div class="border-[1.5px] border-black text-sm rounded-b-lg">
-                    <div class="flex flex-wrap justify-between p-2 mr-10">
-                        <label for="" class="font-bold ">MAIN LIVELIHOOD</label>
-                        <label class="flex items-center font-bold">
-                            <input type="checkbox" class="mr-2 h-4 w-4 rounded-sm border-black">
-                            <span>FARMER</span>
-                        </label>
-                        <label class="flex items-center font-bold">
-                            <input type="checkbox" class="mr-2 h-4 w-4 rounded-sm border-black">
-                            <span>FARMWORKER/LABORER</span>
-                        </label>
-                        <label class="flex items-center font-bold">
-                            <input type="checkbox" class="mr-2 h-4 w-4 rounded-sm border-black">
-                            <span>FISHERFOLK</span>
-                        </label>
-                        <label class="flex items-center font-bold">
-                            <input type="checkbox" class="mr-2 h-4 w-4 rounded-sm border-black">
-                            <span>AGRI-YOUTH</span>
-                        </label>
-                    </div>
-
-                    <div
-                        class="grid grid-cols-1 md:grid-cols-4 border-[2.5px] border-r-0 border-l-0 border-black border-collapse text-sm">
-                        <div class="p-2 border-r-[2.5px] border-black">
-                            <p class="font-semibold">For Farmers:</p>
-                            <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
-                                Rice</label>
-                            <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
-                                Corn</label>
-                            <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
-                                Other
-                                Crops: <input type="text" class="border-b w-full ml-1"></label>
-                            <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
-                                Livestock: <input type="text" class="border-b w-full ml-1"></label>
-                            <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
-                                Poultry: <input type="text" class="border-b w-full ml-1"></label>
-                        </div>
-                        <div class="p-2 border-r-[2.5px] border-black">
-                            <p class="font-semibold">For Farmworkers:</p>
-                            <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
-                                Land
-                                Preparation</label>
-                            <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
-                                Planting/Transplanting</label>
-                            <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
-                                Cultivation</label>
-                            <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
-                                Harvesting</label>
-                            <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
-                                Others:
-                                <input type="text" class="border-b w-full ml-1"></label>
-                        </div>
-                        <div class="p-2 border-r-[2.5px] border-black">
-                            <p class="font-semibold">For Fisherfolk:</p>
-                            <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
-                                Fish
-                                Capture</label>
-                            <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
-                                Aquaculture</label>
-                            <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
-                                Gleaning</label>
-                            <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
-                                Fish
-                                Processing</label>
-                            <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
-                                Fish
-                                Vending</label>
-                            <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
-                                Others:
-                                <input type="text" class="border-b w-full ml-1"></label>
-                        </div>
-                        <div class="p-2">
-                            <p class="font-semibold">For Agri-Youth:</p>
-                            <p class="text-xs mt-2 italic">For the youth engaged in farming, fishing and/or other
-                                programs
-                                related to the promotion and development of any agricultural activity.</p>
-                            <label class="block mt-4">Type of Involvement:</label>
-                            <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
-                                Part of
-                                a farming household</label>
-                            <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
-                                Student
-                                of an agriculture or agri-fishery related course</label>
-                            <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
-                                Out-of-school youth with formal agri-fishery related course</label>
-                            <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
-                                Directly engaged in any agricultural activity/program</label>
-                            <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
-                                Others,
-                                specify: <input type="text" class="border-b w-full ml-1"></label>
-                        </div>
-                    </div>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 mt-4 gap-4">
-                        <div class="p-2 border-[2.5px] border-black rounded-lg">
-                            <label class="block">Gross Annual Income Last Year (Farming):</label>
-                            <input type="text" class="w-full border p-1 mt-1 rounded-sm">
-                        </div>
-                        <div class="p-2 border-[2.5px] border-black rounded-lg">
-                            <label class="block">Gross Annual Income Last Year (Non-Farming):</label>
-                            <input type="text" class="w-full border p-1 mt-1 rounded-sm">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Footer Section (Client's Copy) -->
-            <div class="w-full mt-8 flex flex-col items-center">
-                <div class="w-full border-t-[2.5px] border-black border-dashed"></div>
-                <p class="mt-4 font-bold text-center">Registry System for Basic Sector in Agriculture
-                    (RSBSA)<br>ENROLLMENT
-                    CLIENT'S COPY</p>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full mt-4">
-                    <div class="form-field">
-                        <input type="text"
-                            class="block py-1 w-full text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer"
-                            placeholder=" ">
-                        <label class="flex font-bold justify-center text-xs">Reference Number</label>
-                    </div>
-                    <div class="form-field">
-                        <input type="text"
-                            class="block py-1 w-full text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer"
-                            placeholder=" ">
-                        <label class="flex font-bold justify-center text-xs">REGION</label>
-                    </div>
-                    <div class="form-field">
-                        <input type="text"
-                            class="block py-1 w-full text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer"
-                            placeholder=" ">
-                        <label class="flex font-bold justify-center text-xs">PROVINCE</label>
-                    </div>
-                    <div class="form-field">
-                        <input type="text"
-                            class="block py-1 w-full text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer"
-                            placeholder=" ">
-                        <label class="flex font-bold justify-center text-xs">CITY/MUNICIPALITY</label>
-                    </div>
-                </div>
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full mt-4">
-                    <div class="form-field">
-                        <input type="text"
-                            class="block py-1 w-full text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer"
-                            placeholder=" ">
-                        <label class="flex font-bold justify-center text-xs">First Name</label>
-                    </div>
-                    <div class="form-field">
-                        <input type="text"
-                            class="block py-1 w-full text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer"
-                            placeholder=" ">
-                        <label class="flex font-bold justify-center text-xs">Middle Name</label>
-                    </div>
-                    <div class="form-field">
-                        <input type="text"
-                            class="block py-1 w-full text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer"
-                            placeholder=" ">
-                        <label class="flex font-bold justify-center text-xs">Extension Name</label>
-                    </div>
-                </div>
-                <p class="mt-4 text-center font-bold text-lg">THIS FORM IS NOT FOR SALE</p>
             </div>
         </div>
+        <!-- Part II: Farm Profile -->
+        <div class="w-full ">
+            <h3 class="text-white font-bold bg-black px-4 py-2 text-lg">PART II: FARM PROFILE</h3>
+            <div class="border-[1.5px] border-black text-sm rounded-b-lg">
+                <div class="flex flex-wrap justify-between p-2 mr-10">
+                    <label for="" class="font-bold ">MAIN LIVELIHOOD</label>
+                    <label class="flex items-center font-bold">
+                        <input type="checkbox" class="mr-2 h-4 w-4 rounded-sm border-black">
+                        <span>FARMER</span>
+                    </label>
+                    <label class="flex items-center font-bold">
+                        <input type="checkbox" class="mr-2 h-4 w-4 rounded-sm border-black">
+                        <span>FARMWORKER/LABORER</span>
+                    </label>
+                    <label class="flex items-center font-bold">
+                        <input type="checkbox" class="mr-2 h-4 w-4 rounded-sm border-black">
+                        <span>FISHERFOLK</span>
+                    </label>
+                    <label class="flex items-center font-bold">
+                        <input type="checkbox" class="mr-2 h-4 w-4 rounded-sm border-black">
+                        <span>AGRI-YOUTH</span>
+                    </label>
+                </div>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-4 border-[2.5px] border-r-0 border-l-0 border-black border-collapse text-sm">
+                    <div class="p-2 border-r-[2.5px] border-black">
+                        <p class="font-semibold">For Farmers:</p>
+                        <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
+                            Rice</label>
+                        <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
+                            Corn</label>
+                        <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
+                            Other
+                            Crops: <input type="text" class="border-b w-full ml-1"></label>
+                        <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
+                            Livestock: <input type="text" class="border-b w-full ml-1"></label>
+                        <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
+                            Poultry: <input type="text" class="border-b w-full ml-1"></label>
+                    </div>
+                    <div class="p-2 border-r-[2.5px] border-black">
+                        <p class="font-semibold">For Farmworkers:</p>
+                        <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
+                            Land
+                            Preparation</label>
+                        <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
+                            Planting/Transplanting</label>
+                        <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
+                            Cultivation</label>
+                        <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
+                            Harvesting</label>
+                        <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
+                            Others:
+                            <input type="text" class="border-b w-full ml-1"></label>
+                    </div>
+                    <div class="p-2 border-r-[2.5px] border-black">
+                        <p class="font-semibold">For Fisherfolk:</p>
+                        <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
+                            Fish
+                            Capture</label>
+                        <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
+                            Aquaculture</label>
+                        <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
+                            Gleaning</label>
+                        <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
+                            Fish
+                            Processing</label>
+                        <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
+                            Fish
+                            Vending</label>
+                        <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
+                            Others:
+                            <input type="text" class="border-b w-full ml-1"></label>
+                    </div>
+                    <div class="p-2">
+                        <p class="font-semibold">For Agri-Youth:</p>
+                        <p class="text-xs mt-2 italic">For the youth engaged in farming, fishing and/or other
+                            programs
+                            related to the promotion and development of any agricultural activity.</p>
+                        <label class="block mt-4">Type of Involvement:</label>
+                        <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
+                            Part of
+                            a farming household</label>
+                        <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
+                            Student
+                            of an agriculture or agri-fishery related course</label>
+                        <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
+                            Out-of-school youth with formal agri-fishery related course</label>
+                        <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
+                            Directly engaged in any agricultural activity/program</label>
+                        <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
+                            Others,
+                            specify: <input type="text" class="border-b w-full ml-1"></label>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 mt-4 gap-4">
+                    <div class="p-2 border-[2.5px] border-black rounded-lg">
+                        <label class="block">Gross Annual Income Last Year (Farming):</label>
+                        <input type="text" class="w-full border p-1 mt-1 rounded-sm">
+                    </div>
+                    <div class="p-2 border-[2.5px] border-black rounded-lg">
+                        <label class="block">Gross Annual Income Last Year (Non-Farming):</label>
+                        <input type="text" class="w-full border p-1 mt-1 rounded-sm">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section (Client's Copy) -->
+        <div class="w-full mt-8 flex flex-col items-center">
+            <div class="w-full border-t-[2.5px] border-black border-dashed"></div>
+            <p class="mt-4 font-bold text-center">Registry System for Basic Sector in Agriculture
+                (RSBSA)<br>ENROLLMENT
+                CLIENT'S COPY</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full mt-4">
+                <div class="form-field">
+                    <input type="text"
+                        class="block py-1 w-full text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer"
+                        placeholder=" ">
+                    <label class="flex font-bold justify-center text-xs">Reference Number</label>
+                </div>
+                <div class="form-field">
+                    <input type="text"
+                        class="block py-1 w-full text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer"
+                        placeholder=" ">
+                    <label class="flex font-bold justify-center text-xs">REGION</label>
+                </div>
+                <div class="form-field">
+                    <input type="text"
+                        class="block py-1 w-full text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer"
+                        placeholder=" ">
+                    <label class="flex font-bold justify-center text-xs">PROVINCE</label>
+                </div>
+                <div class="form-field">
+                    <input type="text"
+                        class="block py-1 w-full text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer"
+                        placeholder=" ">
+                    <label class="flex font-bold justify-center text-xs">CITY/MUNICIPALITY</label>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full mt-4">
+                <div class="form-field">
+                    <input type="text"
+                        class="block py-1 w-full text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer"
+                        placeholder=" ">
+                    <label class="flex font-bold justify-center text-xs">First Name</label>
+                </div>
+                <div class="form-field">
+                    <input type="text"
+                        class="block py-1 w-full text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer"
+                        placeholder=" ">
+                    <label class="flex font-bold justify-center text-xs">Middle Name</label>
+                </div>
+                <div class="form-field">
+                    <input type="text"
+                        class="block py-1 w-full text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer"
+                        placeholder=" ">
+                    <label class="flex font-bold justify-center text-xs">Extension Name</label>
+                </div>
+            </div>
+            <p class="mt-4 text-center font-bold text-lg">THIS FORM IS NOT FOR SALE</p>
+        </div>
+    </div>
     </div>
 
 </body>
