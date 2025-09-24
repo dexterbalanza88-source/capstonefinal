@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RSBSA Enrollment Form</title>
-    <!-- Tailwind CSS CDN for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Apply Times New Roman font to the entire body for a document feel */
         body {
             font-family: 'Times New Roman', serif;
         }
@@ -145,7 +143,7 @@
             <!-- Part I: Personal Information -->
             <div class="w-full">
                 <div class="w-full">
-                    <h3 class="text-white text-lg font-bold bg-black border-b">PART I: PERSONAL INFORMATION</h3>
+                    <h3 class="text-white font-bold bg-black px-4 py-2 text-lg">PART I: PERSONAL INFORMATION</h3>
                     <div class="grid grid-cols-2 gap-8">
                         <div class=" ">
                             <input type="text"
@@ -352,7 +350,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col w-full border-[1.5px] border-b0 border-l-0 border-black md:rounded-r-none ">
+                        <div
+                            class="flex flex-col w-full border-[1.5px] border-b0 border-l-0 border-black md:rounded-r-none ">
                             <!-- Civil Status and Religion -->
                             <div class="p-2 border-b-[1.5px] border-l-0  border-black">
                                 <div class="flex flex-row  py-2 items-center gap-1">
@@ -410,7 +409,7 @@
 
                             <!-- Name of Spouse & Mother's Maiden Name -->
                             <div
-                                class="flex flex-row w-full py-1 border-[1.5px] border-l-0 border-r-0 border-black md:rounded-r-none ">
+                                class="flex flex-row w-full p-2 border-[1.5px] border-l-0 border-r-0 border-black md:rounded-r-none ">
                                 <div class="flex flex-row ">
                                     <div class="flex flex-col mt-2">
                                         <label class="font-bold">MOTHER'S</label>
@@ -425,7 +424,7 @@
                             </div>
                             <!-- Household Head -->
                             <div
-                                class="flex flex-col w-full p-2 border-[1.5px] border-r-0 border-l-0  border-black md:rounded-r-none">
+                                class="flex flex-col w-full border-[1.5px] gap-[5.3px] border-l-0 border-b-0 border-r-0 border-black md:rounded-r-none">
                                 <div class="flex flex-row">
                                     <label class="font-bold">HOUSEHOLD HEAD?</label>
                                     <div class="flex flex-row items-center gap-4 text-sm">
@@ -438,22 +437,36 @@
                                     </div>
                                 </div>
                                 <div class="flex flex-row ml-[10px]">
-                                    <p class="text-sm w-[150px] ml-[3px]">If yes, specify ID Type:</p>
+                                    <p class="text-sm ">If no, name household head :</p>
                                     <input type="text"
-                                        class="ml-[px] block w-[290px] h-4 text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer "
+                                        class="block w-[305px] ml-2 h-4 text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer "
                                         placeholder=" ">
                                 </div>
-                                <div class="flex flex-row py-1">
-                                    <label class="text-sm font-bold w-[90px] ml-[62px]">ID Number:</label>
+                                <div class="flex flex-row ml-[10px]">
+                                    <p class="text-sm ml-[82px]">Relastionship:</p>
                                     <input type="text"
-                                        class="ml-[px] block w-[292px] h-4 border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer "
+                                        class="block w-[306px] ml-2 h-4 text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer "
                                         placeholder=" ">
                                 </div>
-                                 <div class="flex flex-row py-1">
-                                    <label class="text-sm font-bold w-[90px] ml-[62px]">ID Number:</label>
+                                <div class="flex flex-row ml-[10px]">
+                                    <p class="text-sm ">No. of living household members:</p>
                                     <input type="text"
-                                        class="ml-[px] block w-[292px] h-4 border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer "
+                                        class="block w-[277px] ml-2 h-4 text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer "
                                         placeholder=" ">
+                                </div>
+                                <div class="flex flex-row justify-between">
+                                    <div class="flex flex-row ml-[10px]">
+                                        <p class="text-sm ">No. of Male:</p>
+                                        <input type="text"
+                                            class="block w-[100px] ml-2 h-4 text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer "
+                                            placeholder=" ">
+                                    </div>
+                                    <div class="flex flex-row ml-[10px]">
+                                        <p class="text-sm ">No. of Female:</p>
+                                        <input type="text"
+                                            class="block w-[100px] ml-2 mr-2 h-4 text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer "
+                                            placeholder=" ">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -627,13 +640,13 @@
                                         <div class="flex flex-row w-full">
                                             <p class="text-sm w-[150px] ml-[3px]">If yes, specify ID Type:</p>
                                             <input type="text"
-                                                class="ml-[px] block w-[290px] h-4 text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer "
+                                                class="block w-[290px] h-4 text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer "
                                                 placeholder=" ">
                                         </div>
                                         <div class="flex flex-row py-1">
                                             <label class="text-sm font-bold w-[90px] ml-[62px]">ID Number:</label>
                                             <input type="text"
-                                                class="ml-[px] block w-[292px] h-4 border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer "
+                                                class="block w-[292px] h-4 border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer "
                                                 placeholder=" ">
                                         </div>
                                     </div>
@@ -642,7 +655,7 @@
 
                             <!-- Member of any Farmers Association/Cooperative? -->
                             <div
-                                class="w-full flex flex-col border-[1.5px] border-r-0 border-b-0 border-l-0 border-black">
+                                class="w-full flex flex-col border-[1.5px] border-r-0 border-b-0 border-l-0  border-black">
                                 <div class="flex flex-row p-2 border-b-0 border-black gap-1">
                                     <label class="font-normal">Member of any </label><label class="font-bold ">Farmers
                                         Association/Cooperative?</label>
@@ -676,7 +689,7 @@
 
                             <!-- Person to Notify in Case of Emergency -->
                             <div
-                                class="w-full flex flex-col p-2 border-[1.5px] py-1  border-b-0  border-r-0 border-black">
+                                class="w-full flex flex-col p-2 border-[1.5px] py-1 border-l-0 border-b-0 border-r-0 border-black">
                                 <div class="flex flex-col ">
                                     <label class="text-xs font-bold">PERSON TO NOTIFY IN</label>
                                     <div class="flex flex-row ">
@@ -710,11 +723,14 @@
             </div>
         </div>
         <!-- Part II: Farm Profile -->
-        <div class="w-full">
-            <h3 class="text-white font-bold bg-black px-4 py-2 text-lg">PART II: FARM PROFILE</h3>
-            <div class="border-[1.5px] border-black text-sm rounded-b-lg">
-                <div class="flex flex-wrap justify-between p-2 mr-10">
-                    <label for="" class="font-bold ">MAIN LIVELIHOOD</label>
+        <div class="w-full border-[1.5px] border-black">
+            <h3
+                class="text-white font-bold border-[1.5px] border-r-0 border-l-0 border-b-0 border-t-0 bg-black px-4 py-2 text-lg">
+                PART II: FARM PROFILE</h3>
+            <div class="border-[1.5px] border-black text-sm ">
+                <div
+                    class="w-full flex flex-wrap justify-between p-2 mr-10 border-[1.5px] border-black border-b-0 border-l-0 border-r-0">
+                    <label for="" class="font-bold">MAIN LIVELIHOOD</label>
                     <label class="flex items-center font-bold">
                         <input type="checkbox" class="mr-2 h-4 w-4 rounded-sm border-black">
                         <span>FARMER</span>
@@ -732,40 +748,49 @@
                         <span>AGRI-YOUTH</span>
                     </label>
                 </div>
-
                 <div
                     class="grid grid-cols-1 md:grid-cols-4 border-[2.5px] border-r-0 border-l-0 border-black border-collapse text-sm">
-                    <div class="p-2 border-r-[2.5px] border-black">
-                        <p class="font-semibold">For Farmers:</p>
-                        <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
-                            Rice</label>
-                        <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
-                            Corn</label>
-                        <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
-                            Other
-                            Crops: <input type="text" class="border-b w-full ml-1"></label>
-                        <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
-                            Livestock: <input type="text" class="border-b w-full ml-1"></label>
-                        <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
-                            Poultry: <input type="text" class="border-b w-full ml-1"></label>
+                    <div class="p-2 border-r-[2.5px] border-black py-2 gap-4">
+                        <div class="flex flex-col w-full gap-4">
+                            <em class="font-italic underline font-semibold flex justify-center">For Farmers:</em>
+                            <label class="flex items-center font-bold">Type of Farming Activity</label>
+                            <label class="flex items-center ">
+                                <input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
+                                Rice</label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
+                                Corn</label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
+                                Other
+                                Crops: <input type="text" class="border-b w-full ml-1"></label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
+                                Livestock: <input type="text" class="border-b w-full ml-1"></label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
+                                Poultry: <input type="text" class="border-b w-full ml-1"></label>
+                        </div>
                     </div>
                     <div class="p-2 border-r-[2.5px] border-black">
-                        <p class="font-semibold">For Farmworkers:</p>
-                        <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
-                            Land
-                            Preparation</label>
-                        <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
-                            Planting/Transplanting</label>
-                        <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
-                            Cultivation</label>
-                        <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
-                            Harvesting</label>
-                        <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
-                            Others:
-                            <input type="text" class="border-b w-full ml-1"></label>
+                        <div class="flex flex-col gap-2">
+                            <em class="font-italic underline font-semibold flex justify-center">For Farmworkers:</em>
+                            <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
+                                Land
+                                Preparation</label>
+                            <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
+                                Planting/Transplanting</label>
+                            <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
+                                Cultivation</label>
+                            <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
+                                Harvesting</label>
+                            <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
+                                Others:
+                                <input type="text" class="border-b w-full ml-1"></label>
+                        </div>
                     </div>
                     <div class="p-2 border-r-[2.5px] border-black">
-                        <p class="font-semibold">For Fisherfolk:</p>
+                        <em class="font-italic underline font-semibold flex justify-center">For Fisherfolk:</em>
                         <label class="flex items-center"><input type="checkbox" class="mr-1 h-4 w-4 rounded-sm">
                             Fish
                             Capture</label>
@@ -784,8 +809,9 @@
                             <input type="text" class="border-b w-full ml-1"></label>
                     </div>
                     <div class="p-2">
-                        <p class="font-semibold">For Agri-Youth:</p>
-                        <p class="text-xs mt-2 italic">For the youth engaged in farming, fishing and/or other
+                        <em class="font-italic underline font-semibold flex justify-center">For Agri-Youth:</em>
+                        <p class="text-xs mt-2 flex justify-center">For the youth engaged in farming, fishing and/or
+                            other
                             programs
                             related to the promotion and development of any agricultural activity.</p>
                         <label class="block mt-4">Type of Involvement:</label>
@@ -805,14 +831,21 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 mt-4 gap-4">
-                    <div class="p-2 border-[2.5px] border-black rounded-lg">
-                        <label class="block">Gross Annual Income Last Year (Farming):</label>
-                        <input type="text" class="w-full border p-1 mt-1 rounded-sm">
+                <div class="flex flex-row justify-between">
+                    <div class="flex flex-row p-2 ">
+                        <label class="block font-bold">Gross Annual Income Last Year:</label>
                     </div>
-                    <div class="p-2 border-[2.5px] border-black rounded-lg">
-                        <label class="block">Gross Annual Income Last Year (Non-Farming):</label>
-                        <input type="text" class="w-full border p-1 mt-1 rounded-sm">
+                    <div class="flex flex-row  p-2 ">
+                        <label class="block">Farming:</label>
+                        <input type="text"
+                            class=" h-4 mt-1 text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer"
+                            placeholder=" ">
+                    </div>
+                    <div class="flex flex-row  p-2 ">
+                        <label class="block">Non-Farming:</label>
+                        <input type="text"
+                            class=" h-4 mt-1 text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer"
+                            placeholder=" ">
                     </div>
                 </div>
             </div>
