@@ -50,12 +50,14 @@
                         </svg>
                     </button>
                     <!-- Dropdown menu -->
-                    <button type="button"
-                        class="flex mx-3 text-sm bg-white-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-white-100"
-                        id="user-menu-button" aria-expanded="false" data-dropdown-toggle="dropdown">
-                        <span class="sr-only">Open user menu</span>
-                        <img class="w-8 h-8 rounded-full" src="../img/profile.png" alt="user photo" />
-                    </button>
+                    <div class="">
+                        <button type="button"
+                            class="flex mx-3 text-sm bg-white-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-white-100"
+                            id="user-menu-button" aria-expanded="false" data-dropdown-toggle="dropdown">
+                            <span class="sr-only">Open user menu</span>
+                            <img class="w-8 h-8 rounded-full" src="../img/profile.png" alt="user photo" />
+                        </button>
+                    </div>
                     <!-- Dropdown menu -->
                     <div class="hidden z-50 my-4 w-56 text-base list-none bg-white divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600 rounded-xl"
                         id="dropdown">
@@ -182,21 +184,20 @@
         </aside>
         <main class="md:ml-64 pt-20 p-2 ">
             <div>
-                <h1 class="mb-5 text-xl font-bold leading-none tracking-tight text-gray-900 dark:text-white">
+                <h1 class="mb-2 text-xl font-bold leading-none tracking-tight text-gray-900 dark:text-white">
                     RSBSA ENROLLMENT</h1>
             </div>
-            <section class="bg-white p-2 sm:p-5 rounded-lg">
+            <section class="bg-white p-2 ">
                 <div class="mx-auto max-w-screen-xl py-2">
                     <!-- step1 -->
                     <form id="step1" style="display: flex;">
-                        <div class="w-full flex flex-col gap-1">
+                        <div class="w-full flex flex-col gap-1 p-6">
                             <div>
                                 <h1
                                     class=" ml-2 text-lg font-bold leading-none tracking-tight text-gray-900 dark:text-white">
                                     PERSONAL INFORMATION</h1>
                             </div>
-                            <div class="flex flex-col gap-2 p-2 ml-2">
-
+                            <div class="w-full flex flex-col gap-2 p-2 ml-2">
                                 <div class="w-500 gap-5 flex flex-row justify-between" style="width: 880px;">
                                     <div class="w-full " style="width: 400px;">
                                         <label for="date"
@@ -206,7 +207,7 @@
                                             class="relativeshadow-xs bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
                                             placeholder="" required />
                                     </div>
-                                    <div class="w-full " style="width: 436px;">
+                                    <div class="w-full mr-7.5" style="width: 420px;">
                                         <label for="date"
                                             class=" mb-2 text-sm font-normal text-gray-900 dark:text-white">
                                             Reference no.</label>
@@ -254,7 +255,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="shadow-sm shadow-black-400 p-2 mt-0" style="width: 150px;">
+                                    <div class="shadow-sm shadow-black-400 p-2 mt-[-120px]" style="width: 150px;">
                                         <label for="Surname"
                                             class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
                                             Sex</label>
@@ -350,30 +351,60 @@
 
                                 </div>
                             </div>
-                            <div class="w-full  flex flex-row gap-6 items-center justify-center mt-2">
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full  h-3 w-3 bg-blue-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 1</p>
-                                </div>
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 2</p>
-                                </div>
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 3</p>
-                                </div>
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 4</p>
-                                </div>
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 5</p>
-                                </div>
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 6</p>
+                            <div class="w-full flex items-center justify-center mt-4">
+                                <div class="w-full max-w-2xl mx-auto">
+                                    <!-- Progress Bar -->
+                                    <div class="w-full max-w-1xl mx-auto ">
+                                        <ol
+                                            class="flex items-center justify-between w-full gap-[-10px] text-sm font-medium text-blue-600">
+                                            <!-- Step 1 -->
+                                            <li class="flex items-center text-blue-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-gray-600 rounded-full bg-blue-600 text-white">✓</span>
+                                                Step 1
+                                                <span class="flex-1 h-0.5 bg-gray-300 mx-4"></span>
+                                            </li>
+
+                                            <!-- Step 2 -->
+                                            <li class="flex items-center text-gray-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-gray-600 rounded-full bg-gray-600 text-white">✓</span>
+                                                Step 2
+                                                <span class="flex-1 h-0.5 bg-gray-300 mx-4"></span>
+                                            </li>
+
+                                            <!-- Step 3 -->
+                                            <li class="flex items-center text-gray-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-gray-600 rounded-full bg-gray-600 text-white">✓</span>
+                                                Step 3
+                                                <span class="flex-1 h-0.5 bg-gray-300 mx-4"></span>
+                                            </li>
+
+                                            <!-- Step 4 -->
+                                            <li class="flex items-center text-gray-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-gray-600 rounded-full bg-gray-600 text-white">✓</span>
+                                                Step 4
+                                                <span class="flex-1 h-0.5 bg-gray-300 mx-4"></span>
+                                            </li>
+
+                                            <!-- Step 5 -->
+                                            <li class="flex items-center text-gray-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-gray-600 rounded-full bg-gray-600 text-white">✓</span>
+                                                Step 5
+                                                <span class="flex-1 h-0.5 bg-gray-300 mx-4"></span>
+                                            </li>
+
+                                            <!-- Step 6 -->
+                                            <li class="flex items-center text-gray-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-gray-600 rounded-full bg-gray-600 text-white">✓</span>
+                                                Step 6
+                                            </li>
+                                        </ol>
+                                    </div>
                                 </div>
                             </div>
                             <div class=" flex justify-end">
@@ -385,13 +416,13 @@
                     </form>
                     <!-- step2 -->
                     <form id="step2" style="display: none;">
-                        <div class="w-full flex flex-col gap-1">
+                        <div class="w-full flex flex-col gap-1 p-6">
                             <div>
                                 <h1
                                     class=" ml-2 text-lg font-bold leading-none tracking-tight text-gray-900 dark:text-white">
                                     PERSONAL INFORMATION</h1>
                             </div>
-                            <div class="w-full flex flex-col gap-2 p-2 ml-2" style="margin-bottom: 90px;">
+                            <div class="w-full flex flex-col gap-2 p-2 ml-2" style="margin-bottom: 70px;">
                                 <div class="w-full gap-5 flex flex-row justify-between">
                                     <div class="w-full">
                                         <label for="date"
@@ -466,30 +497,60 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-full flex flex-row gap-6 items-center justify-center">
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full  h-3 w-3 bg-gray-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 1</p>
-                                </div>
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full h-3 w-3 bg-blue-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 2</p>
-                                </div>
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 3</p>
-                                </div>
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 4</p>
-                                </div>
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 5</p>
-                                </div>
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 6</p>
+                            <div class="w-full flex items-center justify-center">
+                                <div class="w-full max-w-2xl gap-4">
+                                    <!-- Progress Bar -->
+                                    <div class="w-full max-w-4xl mx-auto">
+                                        <ol
+                                            class="flex items-center justify-between w-full text-sm font-medium text-blue-600">
+                                            <!-- Step 1 -->
+                                            <li class="flex items-center text-blue-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-blue-600 rounded-full bg-blue-600 text-white">✓</span>
+                                                Step 1
+                                                <span class="flex-1 h-0.5 bg-gray-300 mx-4"></span>
+                                            </li>
+
+                                            <!-- Step 2 -->
+                                            <li class="flex items-center text-blue-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-gray-600 rounded-full bg-blue-600 text-white">✓</span>
+                                                Step 2
+                                                <span class="flex-1 h-0.5 bg-gray-300 mx-4"></span>
+                                            </li>
+
+                                            <!-- Step 3 -->
+                                            <li class="flex items-center text-gray-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-gray-600 rounded-full bg-gray-600 text-white">✓</span>
+                                                Step 3
+                                                <span class="flex-1 h-0.5 bg-gray-300 mx-4"></span>
+                                            </li>
+
+                                            <!-- Step 4 -->
+                                            <li class="flex items-center text-gray-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-gray-600 rounded-full bg-gray-600 text-white">✓</span>
+                                                Step 4
+                                                <span class="flex-1 h-0.5 bg-gray-300 mx-4"></span>
+                                            </li>
+
+                                            <!-- Step 5 -->
+                                            <li class="flex items-center text-gray-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-gray-600 rounded-full bg-gray-600 text-white">✓</span>
+                                                Step 5
+                                                <span class="flex-1 h-0.5 bg-gray-300 mx-4"></span>
+                                            </li>
+
+                                            <!-- Step 6 -->
+                                            <li class="flex items-center text-gray-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-gray-600 rounded-full bg-gray-600 text-white">✓</span>
+                                                Step 6
+                                            </li>
+                                        </ol>
+                                    </div>
                                 </div>
                             </div>
                             <div class=" flex justify-between">
@@ -504,13 +565,13 @@
                     </form>
                     <!-- step3 -->
                     <form id="step3" style="display: none;">
-                        <div class="w-full flex flex-col gap-1">
+                        <div class="w-full flex flex-col gap-1 p-6">
                             <div>
                                 <h1
                                     class=" ml-2 text-lg font-bold leading-none tracking-tight text-gray-900 dark:text-white">
                                     PERSONAL INFORMATION</h1>
                             </div>
-                            <div class="w-full flex flex-col gap-2 p-2 ml-2" style="margin-bottom: 115px;">
+                            <div class="w-full flex flex-col gap-2 p-2 ml-2" style="margin-bottom: 102px;">
                                 <div class="w-full  justify-between gap-5 flex flex-row " style="width: 500px;">
                                     <div class="w-full">
                                         <label for="date"
@@ -618,30 +679,60 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-full  flex flex-row gap-6 items-center justify-center">
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full  h-3 w-3 bg-gray-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 1</p>
-                                </div>
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 2</p>
-                                </div>
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full h-3 w-3 bg-blue-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 3</p>
-                                </div>
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 4</p>
-                                </div>
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 5</p>
-                                </div>
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 6</p>
+                            <div class="w-full flex items-center justify-center mt-[-10px]">
+                                <div class="w-full max-w-2xl mx-auto">
+                                    <!-- Progress Bar -->
+                                    <div class="w-full max-w-1xl mx-auto">
+                                        <ol
+                                            class="flex items-center justify-between w-full text-sm font-medium text-blue-600">
+                                            <!-- Step 1 -->
+                                            <li class="flex items-center text-blue-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-blue-600 rounded-full bg-blue-600 text-white">✓</span>
+                                                Step 1
+                                                <span class="flex-1 h-0.5 bg-gray-300 mx-4"></span>
+                                            </li>
+
+                                            <!-- Step 2 -->
+                                            <li class="flex items-center text-blue-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-blue-600 rounded-full bg-blue-600 text-white">✓</span>
+                                                Step 2
+                                                <span class="flex-1 h-0.5 bg-gray-300 mx-4"></span>
+                                            </li>
+
+                                            <!-- Step 3 -->
+                                            <li class="flex items-center text-blue-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-gray-600 rounded-full bg-blue-600 text-white">✓</span>
+                                                Step 3
+                                                <span class="flex-1 h-0.5 bg-gray-300 mx-4"></span>
+                                            </li>
+
+                                            <!-- Step 4 -->
+                                            <li class="flex items-center text-gray-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-gray-600 rounded-full bg-gray-600 text-white">✓</span>
+                                                Step 4
+                                                <span class="flex-1 h-0.5 bg-gray-300 mx-4"></span>
+                                            </li>
+
+                                            <!-- Step 5 -->
+                                            <li class="flex items-center text-gray-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-gray-600 rounded-full bg-gray-600 text-white">✓</span>
+                                                Step 5
+                                                <span class="flex-1 h-0.5 bg-gray-300 mx-4"></span>
+                                            </li>
+
+                                            <!-- Step 6 -->
+                                            <li class="flex items-center text-gray-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-gray-600 rounded-full bg-gray-600 text-white">✓</span>
+                                                Step 6
+                                            </li>
+                                        </ol>
+                                    </div>
                                 </div>
                             </div>
                             <div class=" flex justify-between">
@@ -656,7 +747,7 @@
                     </form>
                     <!-- step4 -->
                     <form id="step4" style="display: none;">
-                        <div class="w-full flex flex-col gap-1">
+                        <div class="w-full flex flex-col gap-1 p-6">
                             <div>
                                 <h1
                                     class=" ml-2 text-lg font-bold leading-none tracking-tight text-gray-900 dark:text-white">
@@ -868,30 +959,60 @@
                                 </div>
                             </div>
 
-                            <div class="w-full  flex flex-row gap-6 items-center justify-center mt-2">
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full  h-3 w-3 bg-gray-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 1</p>
-                                </div>
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 2</p>
-                                </div>
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 3</p>
-                                </div>
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full h-3 w-3 bg-blue-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 4</p>
-                                </div>
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 5</p>
-                                </div>
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 6</p>
+                            <div class="w-full flex items-center justify-center mt-[-10px]">
+                                <div class="w-full max-w-2xl mx-auto">
+                                    <!-- Progress Bar -->
+                                    <div class="w-full max-w-1xl mx-auto">
+                                        <ol
+                                            class="flex items-center justify-between w-full text-sm font-medium text-blue-600">
+                                            <!-- Step 1 -->
+                                            <li class="flex items-center text-blue-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-blue-600 rounded-full bg-blue-600 text-white">✓</span>
+                                                Step 1
+                                                <span class="flex-1 h-0.5 bg-gray-300 mx-4"></span>
+                                            </li>
+
+                                            <!-- Step 2 -->
+                                            <li class="flex items-center text-blue-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-blue-600 rounded-full bg-blue-600 text-white">✓</span>
+                                                Step 2
+                                                <span class="flex-1 h-0.5 bg-gray-300 mx-4"></span>
+                                            </li>
+
+                                            <!-- Step 3 -->
+                                            <li class="flex items-center text-blue-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-blue-600 rounded-full bg-blue-600 text-white">✓</span>
+                                                Step 3
+                                                <span class="flex-1 h-0.5 bg-gray-300 mx-4"></span>
+                                            </li>
+
+                                            <!-- Step 4 -->
+                                            <li class="flex items-center text-blue-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-gray-600 rounded-full bg-blue-600 text-white">✓</span>
+                                                Step 4
+                                                <span class="flex-1 h-0.5 bg-gray-300 mx-4"></span>
+                                            </li>
+
+                                            <!-- Step 5 -->
+                                            <li class="flex items-center text-gray-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-gray-600 rounded-full bg-gray-600 text-white">✓</span>
+                                                Step 5
+                                                <span class="flex-1 h-0.5 bg-gray-300 mx-4"></span>
+                                            </li>
+
+                                            <!-- Step 6 -->
+                                            <li class="flex items-center text-gray-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-gray-600 rounded-full bg-gray-600 text-white">✓</span>
+                                                Step 6
+                                            </li>
+                                        </ol>
+                                    </div>
                                 </div>
                             </div>
                             <div class=" flex justify-between">
@@ -906,7 +1027,7 @@
                     </form>
                     <!-- step5 -->
                     <form id="step5" style="display: none;">
-                        <div class="w-full flex flex-col gap-1">
+                        <div class="w-full flex flex-col gap-1 p-4">
                             <div>
                                 <h1
                                     class=" ml-2 text-lg font-bold leading-none tracking-tight text-gray-900 dark:text-white">
@@ -1121,30 +1242,60 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-full flex flex-row gap-6 items-center justify-center">
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full  h-3 w-3 bg-gray-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 1</p>
-                                </div>
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 2</p>
-                                </div>
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 3</p>
-                                </div>
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 4</p>
-                                </div>
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full h-3 w-3 bg-blue-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 5</p>
-                                </div>
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 6</p>
+                            <div class="w-full flex items-center justify-center mt-[-70px]">
+                                <div class="w-full max-w-2xl mx-auto">
+                                    <!-- Progress Bar -->
+                                    <div class="w-full max-w-1xl mx-auto">
+                                        <ol
+                                            class="flex items-center justify-between w-full text-sm font-medium text-blue-600">
+                                            <!-- Step 1 -->
+                                            <li class="flex items-center text-blue-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-blue-600 rounded-full bg-blue-600 text-white">✓</span>
+                                                Step 1
+                                                <span class="flex-1 h-0.5 bg-gray-300 mx-4"></span>
+                                            </li>
+
+                                            <!-- Step 2 -->
+                                            <li class="flex items-center text-blue-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-blue-600 rounded-full bg-blue-600 text-white">✓</span>
+                                                Step 2
+                                                <span class="flex-1 h-0.5 bg-gray-300 mx-4"></span>
+                                            </li>
+
+                                            <!-- Step 3 -->
+                                            <li class="flex items-center text-blue-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-blue-600 rounded-full bg-blue-600 text-white">✓</span>
+                                                Step 3
+                                                <span class="flex-1 h-0.5 bg-gray-300 mx-4"></span>
+                                            </li>
+
+                                            <!-- Step 4 -->
+                                            <li class="flex items-center text-blue-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-blue-600 rounded-full bg-blue-600 text-white">✓</span>
+                                                Step 4
+                                                <span class="flex-1 h-0.5 bg-gray-300 mx-4"></span>
+                                            </li>
+
+                                            <!-- Step 5 -->
+                                            <li class="flex items-center text-blue-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-gray-600 rounded-full bg-blue-600 text-white">✓</span>
+                                                Step 5
+                                                <span class="flex-1 h-0.5 bg-gray-300 mx-4"></span>
+                                            </li>
+
+                                            <!-- Step 6 -->
+                                            <li class="flex items-center text-gray-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-gray-600 rounded-full bg-gray-600 text-white">✓</span>
+                                                Step 6
+                                            </li>
+                                        </ol>
+                                    </div>
                                 </div>
                             </div>
                             <div class=" flex justify-between">
@@ -1158,8 +1309,8 @@
                         </div>
                     </form>
                     <form id="step6" style="display: none;">
-                        <div class="w-full flex flex-col gap-1">
-                            <div class="flex justify-center m-5">
+                        <div class="w-full flex flex-col gap-1 p-4">
+                            <div class="flex justify-center">
                             </div>
                             <!-- Main modal -->
                             <div id="successModal" tabindex="-1" aria-hidden="true"
@@ -1194,7 +1345,7 @@
                                             <span class="sr-only">Success</span>
                                         </div>
                                         <p class="mb-4 text-lg font-semibold text-gray-900 dark:text-white">
-                                            Change Password Successfully
+                                            Added Successfully
                                         </p>
                                         <button data-modal-toggle="successModal" type="button" onclick="goToSection()"
                                             class="py-2 px-3 text-sm font-medium text-center text-white rounded-lg 
@@ -1246,7 +1397,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="w-full gap-5 flex flex-row justify-between" style="width: 507px;">
+                                <div class="w-full gap-5 flex flex-row justify-between" style="width: 492px;">
                                     <div class="w-full">
                                         <label for="countries"
                                             class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
@@ -1261,7 +1412,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="flex items-center justify-center">
+                                <div class="flex items-center justify-center mt-">
                                     <div class="flex items-center w-[290px]">
                                         <label for="dropzone-file"
                                             class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
@@ -1284,30 +1435,60 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-full flex flex-row gap-6 items-center justify-center">
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full  h-3 w-3 bg-gray-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 1</p>
-                                </div>
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 2</p>
-                                </div>
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 3</p>
-                                </div>
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 4</p>
-                                </div>
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full h-3 w-3 bg-gray-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 5</p>
-                                </div>
-                                <div class="flex flex-col items-center ">
-                                    <div class="rounded-full h-3 w-3 bg-blue-500"></div>
-                                    <p class="text-xs text-gray-900 dark:text-white font-medium">Step 6</p>
+                            <div class="w-full flex items-center justify-center mt-[-10px]">
+                                <div class="w-full max-w-2xl mx-auto">
+                                    <!-- Progress Bar -->
+                                    <div class="w-full max-w-1xl mx-auto">
+                                        <ol
+                                            class="flex items-center justify-between w-full text-sm font-medium text-blue-600">
+                                            <!-- Step 1 -->
+                                            <li class="flex items-center text-blue-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-blue-600 rounded-full bg-blue-600 text-white">✓</span>
+                                                Step 1
+                                                <span class="flex-1 h-0.5 bg-gray-300 mx-4"></span>
+                                            </li>
+
+                                            <!-- Step 2 -->
+                                            <li class="flex items-center text-blue-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-blue-600 rounded-full bg-blue-600 text-white">✓</span>
+                                                Step 2
+                                                <span class="flex-1 h-0.5 bg-gray-300 mx-4"></span>
+                                            </li>
+
+                                            <!-- Step 3 -->
+                                            <li class="flex items-center text-blue-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-blue-600 rounded-full bg-blue-600 text-white">✓</span>
+                                                Step 3
+                                                <span class="flex-1 h-0.5 bg-gray-300 mx-4"></span>
+                                            </li>
+
+                                            <!-- Step 4 -->
+                                            <li class="flex items-center text-blue-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-blue-600 rounded-full bg-blue-600 text-white">✓</span>
+                                                Step 4
+                                                <span class="flex-1 h-0.5 bg-gray-300 mx-4"></span>
+                                            </li>
+
+                                            <!-- Step 5 -->
+                                            <li class="flex items-center text-blue-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-blue-600 rounded-full bg-blue-600 text-white">✓</span>
+                                                Step 5
+                                                <span class="flex-1 h-0.5 bg-gray-300 mx-4"></span>
+                                            </li>
+
+                                            <!-- Step 6 -->
+                                            <li class="flex items-center text-blue-600">
+                                                <span
+                                                    class="flex items-center justify-center w-5 h-5 mr-2 border-2 border-gray-600 rounded-full bg-blue-600 text-white">✓</span>
+                                                Step 6
+                                            </li>
+                                        </ol>
+                                    </div>
                                 </div>
                             </div>
                             <div class=" flex justify-between">

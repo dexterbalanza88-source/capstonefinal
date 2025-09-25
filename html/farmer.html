@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Farmer Profiling System</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    form { max-width: 500px; }
+    label { font-weight: bold; display: block; margin-top: 10px; }
+    input, select { width: 100%; padding: 6px; margin-top: 4px; }
+    video, canvas, img { width: 250px; height: 200px; border: 1px solid #444; margin-top: 8px; }
+    button { margin-top: 10px; padding: 8px 12px; }
+  </style>
+</head>
+<body>
+  <h2>Farmer Profiling Form</h2>
+
+  <form id="farmerForm">
+    <!-- Farmer Details -->
+    <label for="name">Farmer Name</label>
+    <input type="text" id="name" required />
+
+    <label for="age">Age</label>
+    <input type="number" id="age" required />
+
+    <label for="livelihood">Main Livelihood</label>
+    <select id="livelihood" required>
+      <option value="">-- Select --</option>
+      <option value="Rice">Rice</option>
+      <option value="Corn">Corn</option>
+      <option value="Vegetables">Vegetables</option>
+      <option value="Livestock">Livestock</option>
+    </select>
+
+    <!-- Camera Section -->
+    <label>Farmer Photo</label>
+    <video id="video" autoplay></video><br>
+    <button type="button" id="captureBtn">Capture Photo</button>
+    <canvas id="canvas" style="display:none;"></canvas>
+    <img id="photo" alt="Farmer photo will appear here" />
+
+    <!-- Submit -->
+    <button type="submit">Save Farmer Profile</button>
+  </form>
+
+  <script>
+    const video = document.getElementById('video');
+    const canvas = document.getElementById('canvas');
+    const photo = document.getElementById('photo');
+    const captureBtn = document.getElementById('captureBtn');
+    let capturedImage = "";
+
+    // Access Camera
+    navigator.mediaDevices.getUserMedia({ video: true })
+      .then(stream => { video.srcObject = stream; })
+      .catch(err => console.error("Camera error: ", err));
+
+    // Capture Photo
+    captureBtn.addEventListener('click', () => {
+      const context = canvas.getContext('2d');
+      context.drawImage(video, 0, 0, canvas.width, canvas.height);
+      capturedImage = canvas.toDataURL('image/png'); // Base64 string
+      photo.src = capturedImage;
+    });
+
+    // Handle Form Submission
+    document.getElementById('farmerForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const farmerData = {
+        name: document.getElementById('name').value,
+        age: document.getElementById('age').value,
+        livelihood: document.getElementById('livelihood').value,
+        photo: capturedImage
+      };
+
+      console.log("Saving Farmer Data: ", farmerData);
+
+      // TODO: Send farmerData to backend API
+      fetch("http://localhost:5000/farmers", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(farmerData)
+      })
+      .then(res => res.json())
+      .then(data => alert("Farmer profile saved!"))
+      .catch(err => console.error("Error saving: ", err));
+    });
+  </script>
+</body>
+</html>
