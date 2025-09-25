@@ -180,7 +180,7 @@
             </div>
 
         </aside>
-        <main class="md:ml-64  pt-20 p-2 ">
+        <main class="md:ml-64 pt-20 p-2 ">
             <div>
                 <h1 class="mb-5 text-xl font-bold leading-none tracking-tight text-gray-900 dark:text-white">
                     RSBSA ENROLLMENT</h1>
@@ -915,16 +915,18 @@
                             <div class="w-full flex flex-col gap-2 p-2 ml-2" style="margin-bottom: 90px;">
                                 <div class="w-full gap-5 flex flex-row justify-between">
                                     <div class="w-full" style="margin-top: 22px;">
-                                        <label for="countries"
-                                            class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">Main
-                                            Livelihood</label>
-                                        <select id="countries"
-                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                            <option selected></option>
-                                            <option value="MOTHER">FARMER</option>
-                                            <option value="FATHER">FARMER/LABORER</option>
-                                            <option value="BROTHER">FISHERFOLK</option>
-                                            <option value="SISTER">AGRI-YOUTH</option>
+                                        <label for="mainLivelihood"
+                                            class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
+                                            Main Livelihood
+                                        </label>
+                                        <select id="mainLivelihood" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg 
+           focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5
+           dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                                            <option value="" selected>-- Select Livelihood --</option>
+                                            <option value="farmer">FARMER</option>
+                                            <option value="farmerworker">FARMER/LABORER</option>
+                                            <option value="fisherfolk">FISHERFOLK</option>
+                                            <option value="agri-youth">AGRI-YOUTH</option>
                                         </select>
                                     </div>
                                     <div class="w-full">
@@ -933,14 +935,12 @@
                                                 class="mb-2 text-sm font-medium leading-none tracking-tight text-gray-900 dark:text-white">
                                                 <em class="font-italic font-bold">For farmers:</em>
                                             </h1>
-                                        </div>
-                                        <label for="countries"
-                                            class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
-                                            Type of Farming Activity
-                                        </label>
-                                        <select id="countries"
-                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                            <option selected></option>
+                                        </div> <label for="farmerSelect"
+                                            class="block mb-2 text-sm font-normal text-gray-900 dark:text-white"> Type
+                                            of Farming Activity </label> <select id="farmerSelect" disabled class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg 
+           focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5
+           dark:bg-gray-700 dark:border-gray-600 dark:text-white disabled:opacity-50">
+                                            <option value="" selected></option>
                                             <option value="MOTHER">RICE</option>
                                             <option value="FATHER">CORN</option>
                                             <option value="BROTHER">VEGETABLE</option>
@@ -956,14 +956,12 @@
                                                 class="mb-2 text-sm font-medium leading-none tracking-tight text-gray-900 dark:text-white">
                                                 <em class="font-italic font-bold">For farmerworkers:</em>
                                             </h1>
-                                        </div>
-                                        <label for="countries"
-                                            class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
-                                            Kind of Work
-                                        </label>
-                                        <select id="countries"
-                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                            <option selected></option>
+                                        </div> <label for="farmerworkerSelect"
+                                            class="block mb-2 text-sm font-normal text-gray-900 dark:text-white"> Kind
+                                            of Work </label> <select id="farmerworkerSelect" disabled class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg 
+           focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5
+           dark:bg-gray-700 dark:border-gray-600 dark:text-white disabled:opacity-50">
+                                            <option value="" selected></option>
                                             <option value="MOTHER">LAND PREPARATION</option>
                                             <option value="FATHER">PLANTING/TRANSPLANTING</option>
                                             <option value="BROTHER">CULTIVATION</option>
@@ -976,14 +974,13 @@
                                                 class="mb-2 text-sm font-medium leading-none tracking-tight text-gray-900 dark:text-white">
                                                 <em class="font-italic font-bold">For fisherfolk:</em>
                                             </h1>
-                                        </div>
-                                        <label for="countries"
-                                            class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
-                                            Type of Fishinh Activity
-                                        </label>
-                                        <select id="countries"
-                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                            <option selected></option>
+                                        </div> <label for="fisherfolkSelect"
+                                            class="block mb-2 text-sm font-normal text-gray-900 dark:text-white"> Type
+                                            of Fishinh Activity </label> <select id="fisherfolkSelect" disabled class="bg-gray-50 border
+                                        border-gray-300 text-gray-900 text-sm rounded-lg
+                                        focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5
+                                        dark:bg-gray-700 dark:border-gray-600 dark:text-white disabled:opacity-50">
+                                            <option value="" selected></option>
                                             <option value="MOTHER">FISH CAPTURE</option>
                                             <option value="FATHER">AQUACULTURE</option>
                                             <option value="BROTHER">GLEANING</option>
@@ -999,14 +996,12 @@
                                                 class="mb-2 text-sm font-medium leading-none tracking-tight text-gray-900 dark:text-white">
                                                 <em class="font-italic font-bold">For agri-youth:</em>
                                             </h1>
-                                        </div>
-                                        <label for="countries"
-                                            class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
-                                            Type of Involvement
-                                        </label>
-                                        <select id="countries"
-                                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                                            <option selected></option>
+                                        </div> <label for="youthSelect"
+                                            class="block mb-2 text-sm font-normal text-gray-900 dark:text-white"> Type
+                                            of Involvement </label> <select id="youthSelect" disabled class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg 
+           focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5
+           dark:bg-gray-700 dark:border-gray-600 dark:text-white disabled:opacity-50">
+                                            <option value="" selected></option>
                                             <option value="MOTHER">PART OF FARMING HOUSEHOLD</option>
                                             <option value="FATHER">ATTENDING/ATTENDED FORMAL AGRI-FISHERY RELATED COURSE
                                             </option>
@@ -1014,7 +1009,7 @@
                                             </option>
                                         </select>
                                     </div>
-                                    <div class="w-full">
+                                    <div class="w-full mt-4">
                                         <div>
                                             <label for="countries"
                                                 class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
@@ -1266,8 +1261,8 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="flex item-center justify-center mt-5">
-                                    <div class="flex items-center justify-center" style="width: 250px; ">
+                                <div class="flex items-center justify-center">
+                                    <div class="flex items-center w-[290px]">
                                         <label for="dropzone-file"
                                             class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
                                             <div class="flex flex-col items-center justify-center pt-5 pb-6">
@@ -1391,6 +1386,32 @@
         function goToSection() {
             window.location.href = "adddata.html";
         }
+    </script>
+    <script>
+        const livelihood = document.getElementById("mainLivelihood");
+        const farmerSelect = document.getElementById("farmerSelect");
+        const farmerworkerSelect = document.getElementById("farmerworkerSelect");
+        const fisherfolkSelect = document.getElementById("fisherfolkSelect");
+        const youthSelect = document.getElementById("youthSelect");
+
+        function resetAndDisable(selectEl) {
+            selectEl.disabled = true;
+            selectEl.value = ""; // reset to blank
+        }
+
+        livelihood.addEventListener("change", function () {
+            // reset + disable all
+            resetAndDisable(farmerSelect);
+            resetAndDisable(farmerworkerSelect);
+            resetAndDisable(fisherfolkSelect);
+            resetAndDisable(youthSelect);
+
+            // enable only the chosen one
+            if (this.value === "farmer") farmerSelect.disabled = false;
+            if (this.value === "farmerworker") farmerworkerSelect.disabled = false;
+            if (this.value === "fisherfolk") fisherfolkSelect.disabled = false;
+            if (this.value === "agri-youth") youthSelect.disabled = false;
+        });
     </script>
 </body>
 
