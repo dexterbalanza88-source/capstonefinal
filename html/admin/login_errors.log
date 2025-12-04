@@ -1,0 +1,342 @@
+[30-Nov-2025 10:32:23 Europe/Berlin] === NEW LOGIN REQUEST ===
+[30-Nov-2025 10:32:23 Europe/Berlin] Session ID: u1s3gj36ku8ct1lf9fgn37102d
+[30-Nov-2025 10:32:23 Europe/Berlin] Current Session Data: Array
+(
+    [pending_user_id] => 5
+    [pending_user_email] => depotayawa@gmail.com
+    [pending_role] => admin
+    [otp_expires] => 2025-11-30 10:34:20
+    [require_2fa] => 1
+    [login_start_time] => 1764494965
+    [csrf_token] => 52a6e65b8511fc531133f7764d4bc68256ed08cfc78c0953012ca6efaba4f544
+)
+
+[30-Nov-2025 10:32:23 Europe/Berlin] [2025-11-30 10:32:23] DEBUG: Requested role | Data: admin
+[30-Nov-2025 10:32:23 Europe/Berlin] [2025-11-30 10:32:23] DEBUG: Security settings | Data: Array
+(
+    [rate_limit_window] => 15
+    [max_login_attempts] => 5
+    [lockout_duration] => 15
+    [otp_expiry_minutes] => 5
+    [require_2fa] => 
+    [password_min_length] => 8
+    [session_timeout] => 30
+)
+
+[30-Nov-2025 10:32:23 Europe/Berlin] [2025-11-30 10:32:23] DEBUG: End of script reached - no POST data or conditions not met
+[30-Nov-2025 10:32:25 Europe/Berlin] === NEW LOGIN REQUEST ===
+[30-Nov-2025 10:32:25 Europe/Berlin] Session ID: u1s3gj36ku8ct1lf9fgn37102d
+[30-Nov-2025 10:32:25 Europe/Berlin] Current Session Data: Array
+(
+    [pending_user_id] => 5
+    [pending_user_email] => depotayawa@gmail.com
+    [pending_role] => admin
+    [otp_expires] => 2025-11-30 10:34:20
+    [require_2fa] => 1
+    [login_start_time] => 1764494965
+    [csrf_token] => 52a6e65b8511fc531133f7764d4bc68256ed08cfc78c0953012ca6efaba4f544
+)
+
+[30-Nov-2025 10:32:25 Europe/Berlin] [2025-11-30 10:32:25] DEBUG: Requested role | Data: admin
+[30-Nov-2025 10:32:25 Europe/Berlin] [2025-11-30 10:32:25] DEBUG: Security settings | Data: Array
+(
+    [rate_limit_window] => 15
+    [max_login_attempts] => 5
+    [lockout_duration] => 15
+    [otp_expiry_minutes] => 5
+    [require_2fa] => 
+    [password_min_length] => 8
+    [session_timeout] => 30
+)
+
+[30-Nov-2025 10:32:25 Europe/Berlin] [2025-11-30 10:32:25] DEBUG: POST request received | Data: Array
+(
+    [csrf_token] => 52a6e65b8511fc531133f7764d4bc68256ed08cfc78c0953012ca6efaba4f544
+    [email] => depotayawa@gmail.com
+    [password] => Adminuser@123
+    [login] => 
+)
+
+[30-Nov-2025 10:32:25 Europe/Berlin] [2025-11-30 10:32:25] DEBUG: Client IP | Data: ::1
+[30-Nov-2025 10:32:25 Europe/Berlin] [2025-11-30 10:32:25] DEBUG: Rate limit check | Data: Array
+(
+    [attempts] => 0
+    [max_allowed] => 5
+)
+
+[30-Nov-2025 10:32:25 Europe/Berlin] [2025-11-30 10:32:25] DEBUG: CSRF token valid
+[30-Nov-2025 10:32:25 Europe/Berlin] [2025-11-30 10:32:25] DEBUG: Input validation | Data: Array
+(
+    [email] => depotayawa@gmail.com
+    [password_length] => 13
+)
+
+[30-Nov-2025 10:32:25 Europe/Berlin] [2025-11-30 10:32:25] DEBUG: User lookup result | Data: Array
+(
+    [id] => 5
+    [role] => ADMIN
+)
+
+[30-Nov-2025 10:32:25 Europe/Berlin] [2025-11-30 10:32:25] DEBUG: Password verification | Data: Array
+(
+    [correct] => 1
+)
+
+[30-Nov-2025 10:32:25 Europe/Berlin] [2025-11-30 10:32:25] DEBUG: Role check passed
+[30-Nov-2025 10:32:25 Europe/Berlin] [2025-11-30 10:32:25] DEBUG: Account status checks passed
+[30-Nov-2025 10:32:25 Europe/Berlin] [2025-11-30 10:32:25] DEBUG: 2FA check | Data: Array
+(
+    [system_2fa] => 
+    [user_2fa] => 1
+    [require_2fa] => 1
+)
+
+[30-Nov-2025 10:32:25 Europe/Berlin] [2025-11-30 10:32:25] DEBUG: Starting OTP process
+[30-Nov-2025 10:32:25 Europe/Berlin] [2025-11-30 10:32:25] DEBUG: Generated OTP | Data: Array
+(
+    [otp] => 569331
+    [expires] => 2025-11-30 10:37:25
+)
+
+[30-Nov-2025 10:32:25 Europe/Berlin] [2025-11-30 10:32:25] DEBUG: OTP updated in database successfully
+[30-Nov-2025 10:32:25 Europe/Berlin] [2025-11-30 10:32:25] DEBUG: Attempting to send OTP email
+[30-Nov-2025 10:32:29 Europe/Berlin] [2025-11-30 10:32:29] DEBUG: OTP email sent successfully
+[30-Nov-2025 10:32:29 Europe/Berlin] [2025-11-30 10:32:29] DEBUG: Cleared existing session data
+[30-Nov-2025 10:32:29 Europe/Berlin] [2025-11-30 10:32:29] DEBUG: Set OTP session data | Data: Array
+(
+    [pending_user_id] => 5
+    [pending_user_email] => depotayawa@gmail.com
+    [pending_role] => admin
+)
+
+[30-Nov-2025 10:32:29 Europe/Berlin] [2025-11-30 10:32:29] DEBUG: Session regenerated | Data: Array
+(
+    [old_id] => u1s3gj36ku8ct1lf9fgn37102d
+    [new_id] => bl3vim5rlichd8d30qgjpiv35q
+)
+
+[30-Nov-2025 10:32:29 Europe/Berlin] [2025-11-30 10:32:29] DEBUG: Session written and closed
+[30-Nov-2025 10:32:29 Europe/Berlin] [2025-11-30 10:32:29] DEBUG: Redirecting to otp_verify.php
+[30-Nov-2025 10:32:29 Europe/Berlin] === NEW LOGIN REQUEST ===
+[30-Nov-2025 10:32:29 Europe/Berlin] Session ID: bl3vim5rlichd8d30qgjpiv35q
+[30-Nov-2025 10:32:29 Europe/Berlin] Current Session Data: Array
+(
+    [pending_user_id] => 5
+    [pending_user_email] => depotayawa@gmail.com
+    [pending_role] => admin
+    [otp_expires] => 2025-11-30 10:37:25
+    [require_2fa] => 1
+    [login_start_time] => 1764495149
+)
+
+[30-Nov-2025 10:32:29 Europe/Berlin] [2025-11-30 10:32:29] DEBUG: Requested role | Data: admin
+[30-Nov-2025 10:32:29 Europe/Berlin] [2025-11-30 10:32:29] DEBUG: Generated new CSRF token | Data: 761ab5de9175dd1fb338160f82faa04198d17c335da6ff5fdc46d1ad419bf332
+[30-Nov-2025 10:32:29 Europe/Berlin] [2025-11-30 10:32:29] DEBUG: Security settings | Data: Array
+(
+    [rate_limit_window] => 15
+    [max_login_attempts] => 5
+    [lockout_duration] => 15
+    [otp_expiry_minutes] => 5
+    [require_2fa] => 
+    [password_min_length] => 8
+    [session_timeout] => 30
+)
+
+[30-Nov-2025 10:32:29 Europe/Berlin] [2025-11-30 10:32:29] DEBUG: End of script reached - no POST data or conditions not met
+[30-Nov-2025 10:32:47 Europe/Berlin] === NEW LOGIN REQUEST ===
+[30-Nov-2025 10:32:47 Europe/Berlin] Session ID: bl3vim5rlichd8d30qgjpiv35q
+[30-Nov-2025 10:32:47 Europe/Berlin] Current Session Data: Array
+(
+    [pending_user_id] => 5
+    [pending_user_email] => depotayawa@gmail.com
+    [pending_role] => admin
+    [otp_expires] => 2025-11-30 10:37:25
+    [require_2fa] => 1
+    [login_start_time] => 1764495149
+    [csrf_token] => 761ab5de9175dd1fb338160f82faa04198d17c335da6ff5fdc46d1ad419bf332
+)
+
+[30-Nov-2025 10:32:47 Europe/Berlin] [2025-11-30 10:32:47] DEBUG: Requested role | Data: admin
+[30-Nov-2025 10:32:47 Europe/Berlin] [2025-11-30 10:32:47] DEBUG: Security settings | Data: Array
+(
+    [rate_limit_window] => 15
+    [max_login_attempts] => 5
+    [lockout_duration] => 15
+    [otp_expiry_minutes] => 5
+    [require_2fa] => 
+    [password_min_length] => 8
+    [session_timeout] => 30
+)
+
+[30-Nov-2025 10:32:47 Europe/Berlin] [2025-11-30 10:32:47] DEBUG: End of script reached - no POST data or conditions not met
+[30-Nov-2025 10:32:51 Europe/Berlin] === NEW LOGIN REQUEST ===
+[30-Nov-2025 10:32:51 Europe/Berlin] Session ID: bl3vim5rlichd8d30qgjpiv35q
+[30-Nov-2025 10:32:51 Europe/Berlin] Current Session Data: Array
+(
+    [pending_user_id] => 5
+    [pending_user_email] => depotayawa@gmail.com
+    [pending_role] => admin
+    [otp_expires] => 2025-11-30 10:37:25
+    [require_2fa] => 1
+    [login_start_time] => 1764495149
+    [csrf_token] => 761ab5de9175dd1fb338160f82faa04198d17c335da6ff5fdc46d1ad419bf332
+)
+
+[30-Nov-2025 10:32:51 Europe/Berlin] [2025-11-30 10:32:51] DEBUG: Requested role | Data: admin
+[30-Nov-2025 10:32:51 Europe/Berlin] [2025-11-30 10:32:51] DEBUG: Security settings | Data: Array
+(
+    [rate_limit_window] => 15
+    [max_login_attempts] => 5
+    [lockout_duration] => 15
+    [otp_expiry_minutes] => 5
+    [require_2fa] => 
+    [password_min_length] => 8
+    [session_timeout] => 30
+)
+
+[30-Nov-2025 10:32:51 Europe/Berlin] [2025-11-30 10:32:51] DEBUG: POST request received | Data: Array
+(
+    [csrf_token] => 761ab5de9175dd1fb338160f82faa04198d17c335da6ff5fdc46d1ad419bf332
+    [email] => depotayawa@gmail.com
+    [password] => Adminuser@123
+    [login] => 
+)
+
+[30-Nov-2025 10:32:51 Europe/Berlin] [2025-11-30 10:32:51] DEBUG: Client IP | Data: ::1
+[30-Nov-2025 10:32:51 Europe/Berlin] [2025-11-30 10:32:51] DEBUG: Rate limit check | Data: Array
+(
+    [attempts] => 0
+    [max_allowed] => 5
+)
+
+[30-Nov-2025 10:32:51 Europe/Berlin] [2025-11-30 10:32:51] DEBUG: CSRF token valid
+[30-Nov-2025 10:32:51 Europe/Berlin] [2025-11-30 10:32:51] DEBUG: Input validation | Data: Array
+(
+    [email] => depotayawa@gmail.com
+    [password_length] => 13
+)
+
+[30-Nov-2025 10:32:51 Europe/Berlin] [2025-11-30 10:32:51] DEBUG: User lookup result | Data: Array
+(
+    [id] => 5
+    [role] => ADMIN
+)
+
+[30-Nov-2025 10:32:52 Europe/Berlin] [2025-11-30 10:32:52] DEBUG: Password verification | Data: Array
+(
+    [correct] => 1
+)
+
+[30-Nov-2025 10:32:52 Europe/Berlin] [2025-11-30 10:32:52] DEBUG: Role check passed
+[30-Nov-2025 10:32:52 Europe/Berlin] [2025-11-30 10:32:52] DEBUG: Account status checks passed
+[30-Nov-2025 10:32:52 Europe/Berlin] [2025-11-30 10:32:52] DEBUG: 2FA check | Data: Array
+(
+    [system_2fa] => 
+    [user_2fa] => 1
+    [require_2fa] => 1
+)
+
+[30-Nov-2025 10:32:52 Europe/Berlin] [2025-11-30 10:32:52] DEBUG: Starting OTP process
+[30-Nov-2025 10:32:52 Europe/Berlin] [2025-11-30 10:32:52] DEBUG: Generated OTP | Data: Array
+(
+    [otp] => 445085
+    [expires] => 2025-11-30 10:37:52
+)
+
+[30-Nov-2025 10:32:52 Europe/Berlin] [2025-11-30 10:32:52] DEBUG: OTP updated in database successfully
+[30-Nov-2025 10:32:52 Europe/Berlin] [2025-11-30 10:32:52] DEBUG: Attempting to send OTP email
+[30-Nov-2025 10:32:57 Europe/Berlin] [2025-11-30 10:32:57] DEBUG: OTP email sent successfully
+[30-Nov-2025 10:32:57 Europe/Berlin] [2025-11-30 10:32:57] DEBUG: Cleared existing session data
+[30-Nov-2025 10:32:57 Europe/Berlin] [2025-11-30 10:32:57] DEBUG: Set OTP session data | Data: Array
+(
+    [pending_user_id] => 5
+    [pending_user_email] => depotayawa@gmail.com
+    [pending_role] => admin
+)
+
+[30-Nov-2025 10:32:57 Europe/Berlin] [2025-11-30 10:32:57] DEBUG: Session regenerated | Data: Array
+(
+    [old_id] => bl3vim5rlichd8d30qgjpiv35q
+    [new_id] => op741tgosjm9f3dipcf54lsae9
+)
+
+[30-Nov-2025 10:32:57 Europe/Berlin] [2025-11-30 10:32:57] DEBUG: Session written and closed
+[30-Nov-2025 10:32:57 Europe/Berlin] [2025-11-30 10:32:57] DEBUG: Redirecting to otp_verify.php
+[30-Nov-2025 10:32:57 Europe/Berlin] === NEW LOGIN REQUEST ===
+[30-Nov-2025 10:32:57 Europe/Berlin] Session ID: op741tgosjm9f3dipcf54lsae9
+[30-Nov-2025 10:32:57 Europe/Berlin] Current Session Data: Array
+(
+    [pending_user_id] => 5
+    [pending_user_email] => depotayawa@gmail.com
+    [pending_role] => admin
+    [otp_expires] => 2025-11-30 10:37:52
+    [require_2fa] => 1
+    [login_start_time] => 1764495177
+)
+
+[30-Nov-2025 10:32:57 Europe/Berlin] [2025-11-30 10:32:57] DEBUG: Requested role | Data: admin
+[30-Nov-2025 10:32:57 Europe/Berlin] [2025-11-30 10:32:57] DEBUG: Generated new CSRF token | Data: 96a2dee4889b5480af354abcdcccabee9c9961f6a5817ea546e1fc97e4742889
+[30-Nov-2025 10:32:57 Europe/Berlin] [2025-11-30 10:32:57] DEBUG: Security settings | Data: Array
+(
+    [rate_limit_window] => 15
+    [max_login_attempts] => 5
+    [lockout_duration] => 15
+    [otp_expiry_minutes] => 5
+    [require_2fa] => 
+    [password_min_length] => 8
+    [session_timeout] => 30
+)
+
+[30-Nov-2025 10:32:57 Europe/Berlin] [2025-11-30 10:32:57] DEBUG: End of script reached - no POST data or conditions not met
+[30-Nov-2025 10:36:00 Europe/Berlin] === NEW LOGIN REQUEST ===
+[30-Nov-2025 10:36:00 Europe/Berlin] Session ID: op741tgosjm9f3dipcf54lsae9
+[30-Nov-2025 10:36:00 Europe/Berlin] Current Session Data: Array
+(
+    [pending_user_id] => 5
+    [pending_user_email] => depotayawa@gmail.com
+    [pending_role] => admin
+    [otp_expires] => 2025-11-30 10:37:52
+    [require_2fa] => 1
+    [login_start_time] => 1764495177
+    [csrf_token] => 96a2dee4889b5480af354abcdcccabee9c9961f6a5817ea546e1fc97e4742889
+)
+
+[30-Nov-2025 10:36:00 Europe/Berlin] [2025-11-30 10:36:00] DEBUG: Requested role | Data: admin
+[30-Nov-2025 10:36:00 Europe/Berlin] [2025-11-30 10:36:00] DEBUG: Security settings | Data: Array
+(
+    [rate_limit_window] => 15
+    [max_login_attempts] => 5
+    [lockout_duration] => 15
+    [otp_expiry_minutes] => 5
+    [require_2fa] => 
+    [password_min_length] => 8
+    [session_timeout] => 30
+)
+
+[30-Nov-2025 10:36:00 Europe/Berlin] [2025-11-30 10:36:00] DEBUG: End of script reached - no POST data or conditions not met
+[30-Nov-2025 10:36:10 Europe/Berlin] === NEW LOGIN REQUEST ===
+[30-Nov-2025 10:36:10 Europe/Berlin] Session ID: op741tgosjm9f3dipcf54lsae9
+[30-Nov-2025 10:36:10 Europe/Berlin] Current Session Data: Array
+(
+    [pending_user_id] => 5
+    [pending_user_email] => depotayawa@gmail.com
+    [pending_role] => admin
+    [otp_expires] => 2025-11-30 10:37:52
+    [require_2fa] => 1
+    [login_start_time] => 1764495177
+    [csrf_token] => 96a2dee4889b5480af354abcdcccabee9c9961f6a5817ea546e1fc97e4742889
+)
+
+[30-Nov-2025 10:36:10 Europe/Berlin] [2025-11-30 10:36:10] DEBUG: Requested role | Data: admin
+[30-Nov-2025 10:36:10 Europe/Berlin] [2025-11-30 10:36:10] DEBUG: Security settings | Data: Array
+(
+    [rate_limit_window] => 15
+    [max_login_attempts] => 5
+    [lockout_duration] => 15
+    [otp_expiry_minutes] => 5
+    [require_2fa] => 
+    [password_min_length] => 8
+    [session_timeout] => 30
+)
+
+[30-Nov-2025 10:36:10 Europe/Berlin] [2025-11-30 10:36:10] DEBUG: End of script reached - no POST data or conditions not met

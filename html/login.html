@@ -1,95 +1,94 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
-    <link href="../css/output.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAO in Abra De Ilog | Login</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .background-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background:
+        linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)),
+        url('../img/mun.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      filter: brightness(0.9) blur(2px);
+      z-index: -1;
+    }
+  </style>
 </head>
 
-<body class="">
-    <div class="antialiased bg-white ">
-        <nav
-            class="bg-white border-b border-gray-200 px-4 py-2.5 dark:bg-gray-800 dark:border-gray-700 fixed left-0 right-0 top-0 z-50">
-            <div class="flex flex-wrap justify-between items-center">
-                <div class="flex justify-start items-center">
-                    <button data-drawer-target="drawer-navigation" data-drawer-toggle="drawer-navigation"
-                        aria-controls="drawer-navigation"
-                        class="p-2 mr-2 text-gray-600 rounded-lg cursor-pointer md:hidden hover:text-gray-900 hover:bg-gray-100 focus:bg-gray-100 dark:focus:bg-gray-700 focus:ring-2 focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
-                        <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                        <svg aria-hidden="true" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                        <span class="sr-only">Toggle sidebar</span>
-                    </button>
-                    <a href="https://flowbite.com" class="flex items-center justify-between mr-4">
-                        <img src="../img/logo.png" class="mr-3 h-8" alt="Flowbite Logo" />
-                        <span class="self-center text-1xl font-semibold whitespace-nowrap dark:text-white">Digital RSBSA
-                            in Abra de Ilog Occidental Mindoro</span>
-                    </a>
-                </div>
-            </div>
-        </nav>
-        <!-- Sidebar -->
-        <main class="flex justify-center items-center flex-col " style="margin-top: 50px;">
-            <section>
-                <div class=""
-                    style="background-image: url(../img/background.jpg); background-size: cover; background-repeat: no-repeat;  width: 700px; height: 500px;">
-                    <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0"
-                        style="width: 350px; margin-top: 40px;">
-                        <div class=" bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700"
-                            style="width: 350px; margin-top: 50%;">
-                            <form class=" space-y-4 md:space-y-6 sm:p-8">
-                                <div class="flex flex justify-center">
-                                    <div>
-                                        <img src="../img/logo.png" style="width: 60px; height: 60px;">
-                                    </div>
-                                </div>
-                                <div class="flex justify-center font-thin text-gray-900 dark:text-black"
-                                    style="font-size: 12px;">
-                                    <p>
-                                        Digital RSBSA in Abra de Ilog Occidental Mindoro
-                                    </p>
-                                </div>
-                                <div class="flex justify-center">
-                                    <select id="user" onchange="userSelect(this) "
-                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 "
-                                        placeholder="Search">
-                                        <option selected>- Select Type of User -</option>
-                                        <option value="ADMIN">ADMIN</option>
-                                        <option value="STAFF">STAFF</option>
-                                    </select>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-    </div>
-    <script>
-        function userSelect(select) {
-            let user = select.value;
+<body class="min-h-screen flex flex-col">
 
-            if (user === "ADMIN") {
-                window.location.href = "adminlogin.html"; // redirect to admin page
-            } else if (user === "STAFF") {
-                window.location.href = "loginstaff.html"; // redirect to staff page
-            }
-        }
-    </script>
-    <script src="../js/tailwind.config.js"></script>
-    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  <div class="background-image"></div>
+
+  <nav class="bg-[#166534] text-white shadow-lg fixed w-full z-20 top-0 left-0 border-b-4 border-[#E6B800]">
+    <div class="flex items-center justify-between max-w-6xl mx-auto px-6 py-3">
+      <div class="flex items-center space-x-3">
+        <img src="../img/logo.png" alt="LGU Logo" class="h-12 w-12 rounded-full border-2 bg-white border-white">
+        <h1 class="text-lg font-semibold tracking-wide">Municipal Agriculture Office – Abra De Ilog</h1>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-grow flex items-center justify-center relative mt-20">
+    <div class="rounded-2xl shadow-2xl border border-[#166534] max-w-md w-full p-8 text-center bg-white/90 backdrop-blur-md">
+
+      <div class="flex justify-center mb-4">
+        <img src="../img/logo.png" alt="Logo" class="w-20 h-20">
+      </div>
+
+      <h2 class="text-xl font-bold text-[#166534] mb-1">Digital RSBSA</h2>
+      <p class="text-sm text-gray-700 mb-6">Municipality of Abra de Ilog, Occidental Mindoro</p>
+
+      <!-- User Type Dropdown -->
+      <form class="space-y-4">
+        <select onchange="userSelect(this.value)"
+          class="block w-full border border-[#166534] text-gray-800 text-sm rounded-lg focus:ring-[#E6B800] focus:border-[#E6B800] p-2.5 bg-white">
+          <option selected>- Select Type of User -</option>
+          <option value="ADMIN">ADMIN</option>
+          <option value="STAFF">STAFF</option>
+          <option value="Enumerator">Enumerator</option>
+        </select>
+      </form>
+
+      <div class="mt-6 text-xs text-gray-700">
+        © 2025 Municipal Agriculture Office <br>
+        <span class="text-[#166534] font-semibold">Abra de Ilog Occidental Mindoro</span>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function userSelect(value) {
+      if (value === "ADMIN") {
+        window.location.href = "../../capstonefinal/html/admin/adminlogin.php?role=ADMIN";
+      }
+      else if (value === "STAFF") {
+        window.location.href = "../../capstonefinal/html/staff/stafflogin.php?role=STAFF";
+      }
+        else if (value === "Enumerator") {
+        window.location.href = "../../capstonefinal/html/enumerator/enumerator_login.html?role=STAFF";
+      }
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 
 </html>

@@ -65,7 +65,7 @@
                         </div>
                         <ul class="py-1 text-gray-700 dark:text-gray-300" aria-labelledby="dropdown">
                             <li>
-                                <a href="#"
+                                <a href="profile.html"
                                     class="block py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">My
                                     profile</a>
                             </li>
@@ -180,8 +180,8 @@
         </aside>
         <main class="md:ml-64 pt-20 p-2 width-full ">
             <!-- Start coding here -->
-            <section class="bg-gray-50 dark:bg-gray-900 p-3 sm:p-5">
-                <div class="mx-auto max-w-screen-xl px-4 lg:px-12">
+            <section class="bg-gray-50 dark:bg-gray-900 p-2 sm:p-4">
+                <div class="mx-auto max-w-screen-xl px-4">
                     <!-- Start coding here -->
                     <div class="bg-white dark:bg-gray-800 relative shadow-md sm:rounded-lg overflow-hidden">
                         <div
@@ -225,48 +225,6 @@
                                                 d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
                                         </svg>
                                     </button>
-                                    <div id="filterDropdown"
-                                        class="z-10 hidden w-48 p-3 bg-white rounded-lg shadow dark:bg-gray-700">
-                                        <h6 class="mb-3 text-sm font-medium text-gray-900 dark:text-white">Choose brand
-                                        </h6>
-                                        <ul class="space-y-2 text-sm" aria-labelledby="filterDropdownButton">
-                                            <li class="flex items-center">
-                                                <input id="apple" type="checkbox" value=""
-                                                    class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                                                <label for="apple"
-                                                    class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">Apple
-                                                    (56)</label>
-                                            </li>
-                                            <li class="flex items-center">
-                                                <input id="fitbit" type="checkbox" value=""
-                                                    class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                                                <label for="fitbit"
-                                                    class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">Microsoft
-                                                    (16)</label>
-                                            </li>
-                                            <li class="flex items-center">
-                                                <input id="razor" type="checkbox" value=""
-                                                    class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                                                <label for="razor"
-                                                    class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">Razor
-                                                    (49)</label>
-                                            </li>
-                                            <li class="flex items-center">
-                                                <input id="nikon" type="checkbox" value=""
-                                                    class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                                                <label for="nikon"
-                                                    class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">Nikon
-                                                    (12)</label>
-                                            </li>
-                                            <li class="flex items-center">
-                                                <input id="benq" type="checkbox" value=""
-                                                    class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500">
-                                                <label for="benq"
-                                                    class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">BenQ
-                                                    (74)</label>
-                                            </li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -284,6 +242,7 @@
                                         <th scope="col" class="px-4 py-3">Gender</th>
                                         <th scope="col" class="px-4 py-3">Farm Size</th>
                                         <th scope="col" class="px-4 py-3">Type of Crops</th>
+                                        <th scope="col" class="px-4 py-3">Status</th>
                                         <th scope="col" class="px-4 py-3">Action</th>
                                         <th scope="col" class="px-4 py-3">
                                             <span class="sr-only">Actions</span>
@@ -301,6 +260,7 @@
                                         <td class="px-4 py-3">Male</td>
                                         <td class="px-4 py-3">1.70</td>
                                         <td class="px-4 py-3">Rice/Corn</td>
+                                         <td class="px-4 py-3">Pending</td>
                                         <td class="px-4 py-3 flex items-center justify-end">
                                             <button id="apple-imac-28-dropdown-button"
                                                 data-dropdown-toggle="apple-imac-28-dropdown"
@@ -347,6 +307,7 @@
                                         <td class="px-4 py-3">Male</td>
                                         <td class="px-4 py-3">1.50</td>
                                         <td class="px-4 py-3">Rice</td>
+                                        <td class="px-4 py-3">Enrolled</td>
                                         <td class="px-4 py-3 flex items-center justify-end">
                                             <button id="apple-imac-27-dropdown-button"
                                                 data-dropdown-toggle="apple-imac-27-dropdown"
@@ -381,6 +342,7 @@
                                                         ID</a>
                                                 </div>
                                             </div>
+                                            
                                         </td>
                                     </tr>
                                 </tbody>

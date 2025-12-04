@@ -12,7 +12,7 @@
 <body>
     <div class="antialiased bg-gray-50 dark:bg-gray-900">
         <nav
-            class="bg-white border-b border-gray-200 px-4 py-2.5 dark:bg-gray-800 dark:border-gray-700 fixed left-0 right-0 top-0 z-50">
+            class="bg-white border-b border-gray-200 px-4 py-2.5 dark:bg-gray-800 dark:border-gray-700 fixed left-0 right-0 top-0 z-50 shadow">
             <div class="flex flex-wrap justify-between items-center">
                 <div class="flex justify-start items-center">
                     <button data-drawer-target="drawer-navigation" data-drawer-toggle="drawer-navigation"
@@ -67,7 +67,7 @@
                         </div>
                         <ul class="py-1 text-gray-700 dark:text-gray-300" aria-labelledby="dropdown">
                             <li>
-                                <a href="#"
+                                <a href="profile.html"
                                     class="block py-2 px-4 text-sm hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">My
                                     profile</a>
                             </li>
@@ -182,16 +182,16 @@
             </div>
 
         </aside>
-        <main class="md:ml-64 pt-20 p-2 ">
+        <main class="md:ml-64 pt-20 p-6 ">
             <div>
                 <h1 class="mb-2 text-xl font-bold leading-none tracking-tight text-gray-900 dark:text-white">
                     RSBSA ENROLLMENT</h1>
             </div>
-            <section class="bg-white p-2 ">
+            <section class="bg-white border-gray-200 p-2 shadow">
                 <div class="mx-auto max-w-screen-xl py-2">
                     <!-- step1 -->
                     <form id="step1" style="display: flex;">
-                        <div class="w-full flex flex-col gap-1 p-6">
+                        <div class="w-full flex flex-col gap-1 p-4">
                             <div>
                                 <h1
                                     class=" ml-2 text-lg font-bold leading-none tracking-tight text-gray-900 dark:text-white">
@@ -207,7 +207,7 @@
                                             class="relativeshadow-xs bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-1.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-xs-light"
                                             placeholder="" required />
                                     </div>
-                                    <div class="w-full mr-7.5" style="width: 420px;">
+                                    <div class="w-full mr-15" style="width: 410px;">
                                         <label for="date"
                                             class=" mb-2 text-sm font-normal text-gray-900 dark:text-white">
                                             Reference no.</label>
@@ -255,7 +255,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="shadow-sm shadow-black-400 p-2 mt-[-120px]" style="width: 150px;">
+                                    <div class="shadow p-2 mt-[-120px] " style="width: 150px;">
                                         <label for="Surname"
                                             class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
                                             Sex</label>
@@ -416,7 +416,7 @@
                     </form>
                     <!-- step2 -->
                     <form id="step2" style="display: none;">
-                        <div class="w-full flex flex-col gap-1 p-6">
+                        <div class="w-full flex flex-col gap-1 p-4">
                             <div>
                                 <h1
                                     class=" ml-2 text-lg font-bold leading-none tracking-tight text-gray-900 dark:text-white">
@@ -565,16 +565,16 @@
                     </form>
                     <!-- step3 -->
                     <form id="step3" style="display: none;">
-                        <div class="w-full flex flex-col gap-1 p-6">
+                        <div class="w-full flex flex-col gap-1 p-4">
                             <div>
                                 <h1
                                     class=" ml-2 text-lg font-bold leading-none tracking-tight text-gray-900 dark:text-white">
                                     PERSONAL INFORMATION</h1>
                             </div>
                             <div class="w-full flex flex-col gap-2 p-2 ml-2" style="margin-bottom: 102px;">
-                                <div class="w-full  justify-between gap-5 flex flex-row " style="width: 500px;">
-                                    <div class="w-full">
-                                        <label for="date"
+                                <div class="w-full  justify-between gap-5 flex flex-row "style="width: 650px;" >
+                                    <div class="w-full" >
+                                        <label for="date"   
                                             class=" mb-2 text-sm font-normal text-gray-900 dark:text-white">
                                             Mother's Maiden Name</5bel>
                                             <input type="text" id="email"
@@ -601,7 +601,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w-full  justify-between gap-5 flex flex-row " style="width: 500px;">
+                                <div class="w-full  justify-between gap-5 flex flex-row " style="width: 650px;">
                                     <div class="w-full">
                                         <label for="date"
                                             class=" mb-2 text-sm font-normal text-gray-900 dark:text-white">
@@ -747,7 +747,7 @@
                     </form>
                     <!-- step4 -->
                     <form id="step4" style="display: none;">
-                        <div class="w-full flex flex-col gap-1 p-6">
+                        <div class="w-full flex flex-col gap-1 p-4">
                             <div>
                                 <h1
                                     class=" ml-2 text-lg font-bold leading-none tracking-tight text-gray-900 dark:text-white">
@@ -872,7 +872,7 @@
                                                 If Yes, Specify ID Type:</label>
                                             <input type="number" id=""
                                                 style="border-top: 0; border-left: 0; border-right: 0;"
-                                                class="bg-white border border-gray-300 text-gray-900 text-sm block w-full p-1.5"
+                                                class="bg-white border border-gray-300 text-gray-900 text-sm block w-full p-1.5 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                                 placeholder="" required />
                                         </div>
                                     </div>
@@ -905,7 +905,7 @@
                                                 ID Number:</label>
                                             <input type="number" id=""
                                                 style="border-top: 0; border-left: 0; border-right: 0;"
-                                                class="bg-white border border-gray-300 text-gray-900 text-sm block w-full p-1.5"
+                                                class="bg-white border border-gray-300 text-gray-900 text-sm block w-full p-1.5 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                                 placeholder="" required />
                                         </div>
                                     </div>
@@ -916,9 +916,9 @@
                                                 If Yes, Specify</label>
                                             <div class="flex flex-row justify-between px-5 items-center  gap-2 "
                                                 style="width: 250px;">
-                                                <input type="number" id=""
+                                                <input type="text" id=""
                                                     style="border-top: 0; border-left: 0; border-right: 0;"
-                                                    class="bg-white border border-gray-300 text-gray-900 text-sm block w-full p-1.5"
+                                                    class="bg-white border border-gray-300 text-gray-900 text-sm block w-full p-1.5 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                                     placeholder="" required />
                                             </div>
                                         </div>
@@ -927,12 +927,12 @@
                                                 class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
                                                 Contact Number:</label>
                                             <input type="number" id=""
-                                                class="bg-white border border-gray-300 text-gray-900 text-sm block w-full p-1.5"
+                                                class="bg-white border border-gray-300 text-gray-900 text-sm block w-full p-1.5 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                                 placeholder="" required />
                                         </div>
                                     </div>
                                 </div>
-                                <div class=" flex flex-col gap-2 p-2 ml-2" style="margin-bottom: 50px; width: 300px;">
+                                <div class=" flex flex-col gap-2 p-2 mr-2" style="margin-bottom: 50px; width: 190px;">
                                     <label for="Surname"
                                         class="block mb-2 text-lg font-medium text-gray-900 dark:text-white">
                                         Gross Annual Income</label>
@@ -942,7 +942,8 @@
                                                 class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
                                                 Farming</label>
                                             <input type="number" id=""
-                                                class="bg-white border border-gray-300 text-gray-900 text-sm block w-full p-1.5"
+                                                style="border-top: 0; border-left: 0; border-right: 0;"
+                                                class="bg-white border border-gray-300 text-gray-900 text-sm block w-full p-1.5 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                                 placeholder="" required />
                                         </div>
                                     </div>
@@ -952,7 +953,8 @@
                                                 class="block mb-2 text-sm font-normal text-gray-900 dark:text-white">
                                                 Non-Farming</label>
                                             <input type="number" id=""
-                                                class="bg-white border border-gray-300 text-gray-900 text-sm block w-full p-1.5"
+                                                style="border-top: 0; border-left: 0; border-right: 0;"
+                                                class="bg-white border border-gray-300 text-gray-900 text-sm block w-full p-1.5 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                                 placeholder="" required />
                                         </div>
                                     </div>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RSBSA Enrollment Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* PRINT SETTINGS */
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                margin: 0;
+                font-size: 12px;
+            }
+
+            /* Hide non-print elements */
+            .no-print,
+            .sidebar,
+            .navbar,
+            button,
+            .btn,
+            .print-hide {
+                display: none !important;
+            }
+
+            /* Header prints only once */
+            .print-header {
+                position: relative;
+                top: 0;
+                page-break-after: avoid;
+                page-break-before: avoid;
+            }
+
+            /* Avoid splitting important blocks */
+            .section,
+            .footer-section {
+                page-break-inside: avoid;
+                break-inside: avoid;
+            }
+
+            /* Force new page where needed */
+            .page-break {
+                page-break-before: always;
+            }
+        }
+
+        /* Input styling for clean boxes */
+        .form-input-box {
+            width: 18px;
+            height: 18px;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body class="p-4 text-black">
+
+    <!-- ================= HEADER ================= -->
+    <header class="print-header flex justify-between items-start border-b-2 border-black pb-2">
+        <div class="flex items-center space-x-3">
+            <img src="../img/logo.png" alt="Department of Agriculture Logo"
+                class="h-28 w-28 object-contain filter grayscale">
+            <div class="flex flex-col leading-tight">
+                <h1 class="text-2xl font-bold uppercase text-black">ANI AT KITA</h1>
+                <h1 class="text-3xl font-extrabold uppercase text-black">RSBSA ENROLLMENT FORM</h1>
+                <h2 class="text-sm font-semibold uppercase text-black tracking-wide">
+                    REGISTRY SYSTEM FOR BASIC SECTORS IN AGRICULTURE (RSBSA)
+                </h2>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= ENROLLMENT TYPE + REFERENCE ================= -->
+    <div class="mt-4 text-sm text-black space-y-3 section">
+        <!-- Enrollment Type -->
+        <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-3">
+            <span class="font-bold">ENROLLMENT TYPE & DATE ADMINISTERED:</span>
+            <div class="flex items-center space-x-4">
+                <label class="flex items-center space-x-1">
+                    <input type="checkbox" class="w-4 h-4 border border-black">
+                    <span>New</span>
+                </label>
+                <label class="flex items-center space-x-1">
+                    <input type="checkbox" class="w-4 h-4 border border-black">
+                    <span>Updating</span>
+                </label>
+            </div>
+
+            <!-- Date Administered -->
+            <div class="flex space-x-1 ml-auto mt-2 sm:mt-0">
+                <input type="text" maxlength="2" class="w-6 h-6 border border-black text-center text-xs uppercase">
+                <input type="text" maxlength="2" class="w-6 h-6 border border-black text-center text-xs uppercase">
+                <span class="mx-1">/</span>
+                <input type="text" maxlength="2" class="w-6 h-6 border border-black text-center text-xs uppercase">
+                <input type="text" maxlength="2" class="w-6 h-6 border border-black text-center text-xs uppercase">
+                <span class="mx-1">/</span>
+                <input type="text" maxlength="4" class="w-10 h-6 border border-black text-center text-xs uppercase">
+            </div>
+        </div>
+
+        <!-- Reference Number -->
+        <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-3">
+            <span class="font-bold whitespace-nowrap">Reference Number:</span>
+            <div class="flex items-center flex-wrap space-x-1">
+                <input type="text" maxlength="1" class="form-input-box">
+                <input type="text" maxlength="1" class="form-input-box">
+                <input type="text" maxlength="1" class="form-input-box">
+                <input type="text" maxlength="1" class="form-input-box">
+                <span class="mx-1">-</span>
+                <input type="text" maxlength="1" class="form-input-box">
+                <input type="text" maxlength="1" class="form-input-box">
+                <input type="text" maxlength="1" class="form-input-box">
+                <input type="text" maxlength="1" class="form-input-box">
+                <span class="mx-1">-</span>
+                <input type="text" maxlength="1" class="form-input-box">
+                <input type="text" maxlength="1" class="form-input-box">
+                <input type="text" maxlength="1" class="form-input-box">
+                <input type="text" maxlength="1" class="form-input-box">
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= PART II / FARM PROFILE OR OTHER SECTIONS ================= -->
+    <div class="mt-6 section">
+        <!-- You can paste your Part II / form fields here -->
+    </div>
+
+    <!-- ================= FOOTER SECTION (CLIENT'S COPY) ================= -->
+    <div class="w-full mt-8 border-[2.5px] border-black footer-section">
+        <p class="mt-4 font-bold text-center">
+            Registry System for Basic Sector in Agriculture (RSBSA)<br>ENROLLMENT CLIENT'S COPY
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-start sm:items-center w-full p-2 sm:space-y-0 sm:space-x-4 mt-4">
+            <em class="font-normal whitespace-nowrap">Reference Number:</em>
+
+            <div class="flex flex-wrap flex-grow space-x-1">
+                <input type="text" maxlength="1" class="form-input-box">
+                <input type="text" maxlength="1" class="form-input-box">
+                <input type="text" maxlength="1" class="form-input-box">
+                <input type="text" maxlength="1" class="form-input-box">
+                <span class="mx-1">-</span>
+                <input type="text" maxlength="1" class="form-input-box">
+                <input type="text" maxlength="1" class="form-input-box">
+                <input type="text" maxlength="1" class="form-input-box">
+                <input type="text" maxlength="1" class="form-input-box">
+                <span class="mx-1">-</span>
+                <input type="text" maxlength="1" class="form-input-box">
+                <input type="text" maxlength="1" class="form-input-box">
+                <input type="text" maxlength="1" class="form-input-box">
+                <input type="text" maxlength="1" class="form-input-box">
+            </div>
+        </div>
+
+        <div class="flex flex-col w-full mb-2 p-2">
+            <div class="flex flex-row justify-between">
+                <div>
+                    <input type="text"
+                        class="block py-1 w-[460px] text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer"
+                        placeholder=" ">
+                    <label class="flex font-bold justify-center text-xs">Surname:</label>
+                </div>
+                <div>
+                    <input type="text"
+                        class="block py-1 w-[460px] text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer"
+                        placeholder=" ">
+                    <label class="flex font-bold justify-center text-xs">First Name</label>
+                </div>
+            </div>
+
+            <div class="flex flex-row justify-between">
+                <div>
+                    <input type="text"
+                        class="block py-1 w-[460px] text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer"
+                        placeholder=" ">
+                    <label class="flex font-bold justify-center text-xs">Middle Name</label>
+                </div>
+                <div class="mr-[265px]">
+                    <input type="text"
+                        class="block py-1 w-full text-center border-0 border-b-[2.5px] border-gray-600 appearance-none focus:outline-none focus:ring-0 peer"
+                        placeholder=" ">
+                    <label class="flex font-bold justify-center text-xs">Extension Name</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="text-center font-bold text-lg mt-2">THIS FORM IS NOT FOR SALE</p>
+
+</body>
+
+</html>

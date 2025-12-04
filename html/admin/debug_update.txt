@@ -1,0 +1,17 @@
+Array
+(
+    [id] => 7
+    [date] => 2025-11-06
+    [reference] => N/A
+    [s_name] => MAPALO
+    [f_name] => ALEXANDER
+    [m_name] => REYES
+    [e_name] => N/A
+    [gender] => Male
+    [house] => N/A
+    [sitio] => Alatin
+    [brgy] => BALAO
+    [municipal] => N/A
+    [province] => N/A
+    [region] => N/A
+)

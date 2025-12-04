@@ -1,0 +1,12 @@
+[16-Nov-2025 14:35:04 UTC] PHP Warning:  include(../db/conn.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\capstonefinal\html\admin\archive.php on line 8
+[16-Nov-2025 14:35:04 UTC] PHP Warning:  include(): Failed opening '../db/conn.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\capstonefinal\html\admin\archive.php on line 8
+[16-Nov-2025 14:35:04 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'farmer_info.registration_archive' doesn't exist in C:\xampp\htdocs\capstonefinal\html\admin\archive.php:42
+Stack trace:
+#0 C:\xampp\htdocs\capstonefinal\html\admin\archive.php(42): mysqli->prepare('INSERT INTO reg...')
+#1 {main}
+  thrown in C:\xampp\htdocs\capstonefinal\html\admin\archive.php on line 42
+[16-Nov-2025 14:35:23 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'farmer_info.registration_archive' doesn't exist in C:\xampp\htdocs\capstonefinal\html\admin\archive.php:41
+Stack trace:
+#0 C:\xampp\htdocs\capstonefinal\html\admin\archive.php(41): mysqli->prepare('INSERT INTO reg...')
+#1 {main}
+  thrown in C:\xampp\htdocs\capstonefinal\html\admin\archive.php on line 41
